@@ -70,7 +70,7 @@ namespace Ну_рванули
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureHelmetenemy = new System.Windows.Forms.PictureBox();
             this.pictureShield = new System.Windows.Forms.PictureBox();
             this.pictureWeapon = new System.Windows.Forms.PictureBox();
             this.pictureArmour = new System.Windows.Forms.PictureBox();
@@ -92,7 +92,7 @@ namespace Ну_рванули
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHelmetenemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWeapon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureArmour)).BeginInit();
@@ -544,15 +544,15 @@ namespace Ну_рванули
             this.pictureBox9.TabIndex = 96;
             this.pictureBox9.TabStop = false;
             // 
-            // pictureBox10
+            // pictureHelmetenemy
             // 
-            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox10.Location = new System.Drawing.Point(573, 129);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(100, 91);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 95;
-            this.pictureBox10.TabStop = false;
+            this.pictureHelmetenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureHelmetenemy.Location = new System.Drawing.Point(573, 129);
+            this.pictureHelmetenemy.Name = "pictureHelmetenemy";
+            this.pictureHelmetenemy.Size = new System.Drawing.Size(100, 91);
+            this.pictureHelmetenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureHelmetenemy.TabIndex = 95;
+            this.pictureHelmetenemy.TabStop = false;
             // 
             // pictureShield
             // 
@@ -647,7 +647,7 @@ namespace Ну_рванули
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureHelmetenemy);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -677,7 +677,7 @@ namespace Ну_рванули
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHelmetenemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWeapon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureArmour)).EndInit();
@@ -701,7 +701,7 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureHelmetenemy;
         private System.Windows.Forms.ComboBox DamageLogs;
         private System.Windows.Forms.Button choose;
         private System.Windows.Forms.PictureBox pictureBox11;
