@@ -28,8 +28,9 @@ namespace Ну_рванули
     }
     class Weapon
     {
-        public string w_name;
+        public string w_name { get; set; }
         public int min_damage { get; set; }
+        public string defis = "--";
         public int max_damage { get; set; }
         public double armor_coef { get; set; }
         private string w_image;

@@ -39,13 +39,13 @@ namespace Ну_рванули
            
         };
             /* задание картинок шлемам через цикл */
-            string directoryPath = @"E:\Для VS\Ну рванули 1.2\Ну рванули\Helmets";
+            string directoryPath = @"E:\Для VS\Ну рванули 1.3\Helmets";
             /*существует ли директория?*/
             bool existsDir = Directory.Exists(directoryPath); 
             if (existsDir)
             {   /* создаем список всех этлементов в папке со шлемами */
                 var pngs = Directory.EnumerateFiles(directoryPath, "*.png");
-                int i = 1;
+                int i = 0;
                 foreach (var png in pngs)
                 {
                     /* присвоение каждому шлему своей картинки через цикл */
@@ -83,12 +83,12 @@ namespace Ну_рванули
             new Armour ("Coat of Plates", 320),
         };
             
-            directoryPath = @"E:\Для VS\Ну рванули 1.2\Ну рванули\Armour";
+            directoryPath = @"E:\Для VS\Ну рванули 1.3\Armour";
             existsDir = Directory.Exists(directoryPath);
             if (existsDir)
             {   
                 var pngs = Directory.EnumerateFiles(directoryPath, "*.png");
-                int i = 1;
+                int i = 0;
                 foreach (var png in pngs)
                 {
                     
@@ -116,12 +116,12 @@ namespace Ну_рванули
             new Weapon ("empty", 0, 0, 0),
             new Weapon ("empty", 0, 0, 0),
         };
-            directoryPath = @"E:\Для VS\Ну рванули 1.2\Ну рванули\Weapons\OneHanded";
+            directoryPath = @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded";
             existsDir = Directory.Exists(directoryPath);
             if (existsDir)
             {
                 var pngs = Directory.EnumerateFiles(directoryPath, "*.png");
-                int i = 1;
+                int i = 0;
                 foreach (var png in pngs)
                 {
 
@@ -139,8 +139,14 @@ namespace Ну_рванули
             TBHelmarmor.Text = comboBoxHelmet.SelectedValue.ToString();
 
             TBBodyarmor.Text = comboBoxArmour.SelectedValue.ToString();
+            TBWeapDamage.Text = comboBoxWeapon.SelectedValue.ToString();
+            TBHealth.Text = "100/100";
 
+            confirmedbutt.Enabled = false;
             createchar.Enabled = false;
+            arena.Enabled = false;
+
+
             comboBoxHelmet.Enabled = true;
             comboBoxArmour.Enabled = true;
             comboBoxWeapon.Enabled = true;
@@ -156,33 +162,21 @@ namespace Ну_рванули
              * на ней функцию getHelmetImage() из класса*/
             Helmet chosen_helm = (Helmet)comboBoxHelmet.SelectedItem;
             /* выводим изображение выбранного элемента из перечня
-             * заранее заданных*/
-            if (comboBoxHelmet.SelectedText == "empty")
-            {
-                pictureHelmet.Visible = false;               
-            }
-            else
-            {
-                pictureHelmet.Visible = true;
-                pictureHelmet.Image = Image.FromFile(chosen_helm.getHelmetImage());
-            }     
+             * заранее заданных*/                 
+            pictureHelmet.Image = Image.FromFile(chosen_helm.getHelmetImage());     
         }
         private void comboBoxArmour_SelectedIndexChanged(object sender, EventArgs e)
         {
             TBBodyarmor.Text = comboBoxArmour.SelectedValue.ToString();
             Armour chosen_arm = (Armour)comboBoxArmour.SelectedItem;
-            if (comboBoxArmour.SelectedText == "empty")
-                pictureArmour.Visible = false;
-            pictureArmour.Visible = true;
             pictureArmour.Image = Image.FromFile(chosen_arm.getArmourImage());
         }
         private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
         {
-            TBWeapDamage.Text = comboBoxWeapon.SelectedValue.ToString();
+            string mindamage = comboBoxWeapon.SelectedValue.ToString(); 
             Weapon chosen_weap = (Weapon)comboBoxWeapon.SelectedItem;
-            if (comboBoxWeapon.SelectedText == "empty")
-                pictureWeapon.Visible = false;
-            pictureWeapon.Visible = true;
+            /* формируем нормальную запись дамага вытягивая max damage*/
+            TBWeapDamage.Text = mindamage + "--" + chosen_weap.max_damage.ToString();
             pictureWeapon.Image = Image.FromFile(chosen_weap.getWeaponImage());
         }
         
@@ -196,6 +190,7 @@ namespace Ну_рванули
             comboBoxArmour.Enabled = false;
             comboBoxWeapon.Enabled = false;
             comboBoxShield.Enabled = false;
+            arena.Enabled = true;
         }
         private void arena_Click(object sender, EventArgs e)
         {
@@ -206,13 +201,15 @@ namespace Ну_рванули
             arena.helm_armor = TBHelmarmor.Text;
             //////
             arena.helm_image = pictureHelmet.ImageLocation;
-
+            arena.inthelm_armor = Convert.ToInt32(comboBoxHelmet.SelectedValue);
             arena.Show();  
         }
         private void name_TextChanged(object sender, EventArgs e)
         {
-
+            if (name.Text == "")
+                confirmedbutt.Enabled = false;
+            else
+                confirmedbutt.Enabled = true;
         }
-        
     }
 }

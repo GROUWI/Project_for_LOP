@@ -83,6 +83,16 @@ namespace Ну_рванули.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Grey {
+            get {
+                object obj = ResourceManager.GetObject("Grey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Helmets_ClosedPaddedFlatTop {
             get {
                 object obj = ResourceManager.GetObject("Helmets_ClosedPaddedFlatTop", resourceCulture);
@@ -136,6 +146,16 @@ namespace Ну_рванули.Properties {
         internal static System.Drawing.Bitmap png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper1 {
             get {
                 object obj = ResourceManager.GetObject("png-transparent-sword-computer-icons-ice-axe-angle-black-desktop-wallpaper1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper2 {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-sword-computer-icons-ice-axe-angle-black-desktop-wallpaper2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
