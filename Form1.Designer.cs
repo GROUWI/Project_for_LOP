@@ -75,43 +75,46 @@ namespace Ну_рванули
             this.comboBoxHelmet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBoxHelmet.DisplayMember = "1";
             this.comboBoxHelmet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBoxHelmet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxHelmet.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxHelmet.FormattingEnabled = true;
             this.comboBoxHelmet.ImeMode = System.Windows.Forms.ImeMode.On;
             this.comboBoxHelmet.Location = new System.Drawing.Point(148, 193);
             this.comboBoxHelmet.Name = "comboBoxHelmet";
             this.comboBoxHelmet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBoxHelmet.Size = new System.Drawing.Size(100, 28);
+            this.comboBoxHelmet.Size = new System.Drawing.Size(132, 27);
             this.comboBoxHelmet.TabIndex = 4;
             this.comboBoxHelmet.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmet_SelectedIndexChanged);
             // 
             // comboBoxWeapon
             // 
-            this.comboBoxWeapon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxWeapon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxWeapon.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxWeapon.FormattingEnabled = true;
-            this.comboBoxWeapon.Location = new System.Drawing.Point(42, 382);
+            this.comboBoxWeapon.Location = new System.Drawing.Point(0, 385);
             this.comboBoxWeapon.Name = "comboBoxWeapon";
-            this.comboBoxWeapon.Size = new System.Drawing.Size(100, 26);
+            this.comboBoxWeapon.Size = new System.Drawing.Size(132, 27);
             this.comboBoxWeapon.TabIndex = 5;
             this.comboBoxWeapon.SelectedIndexChanged += new System.EventHandler(this.comboBoxWeapon_SelectedIndexChanged);
             // 
             // comboBoxArmour
             // 
-            this.comboBoxArmour.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxArmour.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxArmour.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxArmour.FormattingEnabled = true;
-            this.comboBoxArmour.Location = new System.Drawing.Point(148, 382);
+            this.comboBoxArmour.Location = new System.Drawing.Point(148, 385);
             this.comboBoxArmour.Name = "comboBoxArmour";
-            this.comboBoxArmour.Size = new System.Drawing.Size(100, 26);
+            this.comboBoxArmour.Size = new System.Drawing.Size(132, 27);
             this.comboBoxArmour.TabIndex = 6;
             this.comboBoxArmour.SelectedIndexChanged += new System.EventHandler(this.comboBoxArmour_SelectedIndexChanged);
             // 
             // comboBoxShield
             // 
-            this.comboBoxShield.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxShield.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxShield.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxShield.FormattingEnabled = true;
-            this.comboBoxShield.Location = new System.Drawing.Point(254, 382);
+            this.comboBoxShield.Location = new System.Drawing.Point(296, 385);
             this.comboBoxShield.Name = "comboBoxShield";
-            this.comboBoxShield.Size = new System.Drawing.Size(100, 26);
+            this.comboBoxShield.Size = new System.Drawing.Size(132, 27);
             this.comboBoxShield.TabIndex = 7;
             this.comboBoxShield.SelectedIndexChanged += new System.EventHandler(this.comboBoxShield_SelectedIndexChanged);
             // 
@@ -119,81 +122,79 @@ namespace Ну_рванули
             // 
             this.TBBodyarmor.BackColor = System.Drawing.Color.LightSlateGray;
             this.TBBodyarmor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TBBodyarmor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBBodyarmor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TBBodyarmor.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.TBBodyarmor.Location = new System.Drawing.Point(131, 450);
+            this.TBBodyarmor.Location = new System.Drawing.Point(120, 466);
+            this.TBBodyarmor.Multiline = true;
             this.TBBodyarmor.Name = "TBBodyarmor";
             this.TBBodyarmor.ReadOnly = true;
-            this.TBBodyarmor.Size = new System.Drawing.Size(64, 26);
+            this.TBBodyarmor.Size = new System.Drawing.Size(89, 35);
             this.TBBodyarmor.TabIndex = 8;
-            this.TBBodyarmor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TBMSkill
             // 
             this.TBMSkill.BackColor = System.Drawing.Color.Sienna;
             this.TBMSkill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TBMSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBMSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TBMSkill.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.TBMSkill.Location = new System.Drawing.Point(238, 418);
+            this.TBMSkill.Location = new System.Drawing.Point(266, 421);
             this.TBMSkill.Multiline = true;
             this.TBMSkill.Name = "TBMSkill";
             this.TBMSkill.ReadOnly = true;
-            this.TBMSkill.Size = new System.Drawing.Size(66, 26);
+            this.TBMSkill.Size = new System.Drawing.Size(89, 39);
             this.TBMSkill.TabIndex = 9;
-            this.TBMSkill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TBMDef
             // 
             this.TBMDef.BackColor = System.Drawing.Color.Sienna;
             this.TBMDef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TBMDef.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBMDef.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TBMDef.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.TBMDef.Location = new System.Drawing.Point(238, 450);
+            this.TBMDef.Location = new System.Drawing.Point(268, 466);
             this.TBMDef.Multiline = true;
             this.TBMDef.Name = "TBMDef";
             this.TBMDef.ReadOnly = true;
-            this.TBMDef.Size = new System.Drawing.Size(66, 26);
+            this.TBMDef.Size = new System.Drawing.Size(87, 35);
             this.TBMDef.TabIndex = 10;
-            this.TBMDef.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TBHelmarmor
             // 
             this.TBHelmarmor.BackColor = System.Drawing.Color.LightSlateGray;
             this.TBHelmarmor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TBHelmarmor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBHelmarmor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TBHelmarmor.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.TBHelmarmor.Location = new System.Drawing.Point(131, 418);
+            this.TBHelmarmor.Location = new System.Drawing.Point(120, 421);
+            this.TBHelmarmor.Multiline = true;
             this.TBHelmarmor.Name = "TBHelmarmor";
             this.TBHelmarmor.ReadOnly = true;
-            this.TBHelmarmor.Size = new System.Drawing.Size(64, 26);
+            this.TBHelmarmor.Size = new System.Drawing.Size(89, 39);
             this.TBHelmarmor.TabIndex = 14;
-            this.TBHelmarmor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TBHealth
             // 
             this.TBHealth.BackColor = System.Drawing.Color.DarkRed;
             this.TBHealth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TBHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TBHealth.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.TBHealth.Location = new System.Drawing.Point(131, 485);
+            this.TBHealth.Location = new System.Drawing.Point(120, 507);
+            this.TBHealth.Multiline = true;
             this.TBHealth.Name = "TBHealth";
-            this.TBHealth.Size = new System.Drawing.Size(66, 26);
+            this.TBHealth.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TBHealth.Size = new System.Drawing.Size(89, 39);
             this.TBHealth.TabIndex = 15;
-            this.TBHealth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TBWeapDamage
             // 
             this.TBWeapDamage.BackColor = System.Drawing.Color.Crimson;
             this.TBWeapDamage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TBWeapDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBWeapDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TBWeapDamage.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.TBWeapDamage.Location = new System.Drawing.Point(238, 485);
+            this.TBWeapDamage.Location = new System.Drawing.Point(268, 507);
             this.TBWeapDamage.Multiline = true;
             this.TBWeapDamage.Name = "TBWeapDamage";
             this.TBWeapDamage.ReadOnly = true;
-            this.TBWeapDamage.Size = new System.Drawing.Size(66, 26);
+            this.TBWeapDamage.Size = new System.Drawing.Size(87, 39);
             this.TBWeapDamage.TabIndex = 19;
-            this.TBWeapDamage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // createchar
             // 
@@ -222,7 +223,7 @@ namespace Ну_рванули
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 47);
+            this.label1.Location = new System.Drawing.Point(23, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 22;
@@ -231,7 +232,7 @@ namespace Ну_рванули
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(79, 73);
+            this.label2.Location = new System.Drawing.Point(51, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 23;
@@ -239,7 +240,7 @@ namespace Ну_рванули
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(148, 44);
+            this.name.Location = new System.Drawing.Point(120, 44);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(167, 20);
             this.name.TabIndex = 24;
@@ -247,16 +248,18 @@ namespace Ну_рванули
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(148, 70);
+            this.textBox2.Location = new System.Drawing.Point(120, 70);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(167, 20);
             this.textBox2.TabIndex = 25;
             // 
             // confirmedbutt
             // 
-            this.confirmedbutt.Location = new System.Drawing.Point(112, 517);
+            this.confirmedbutt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.confirmedbutt.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmedbutt.Location = new System.Drawing.Point(130, 549);
             this.confirmedbutt.Name = "confirmedbutt";
-            this.confirmedbutt.Size = new System.Drawing.Size(173, 44);
+            this.confirmedbutt.Size = new System.Drawing.Size(173, 72);
             this.confirmedbutt.TabIndex = 26;
             this.confirmedbutt.Text = "Подтвердить персонажа";
             this.confirmedbutt.UseVisualStyleBackColor = true;
@@ -266,9 +269,9 @@ namespace Ну_рванули
             // 
             this.pictureBoxWeapDamage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxWeapDamage.Image = global::Ну_рванули.Properties.Resources.SwordHitHeart111;
-            this.pictureBoxWeapDamage.Location = new System.Drawing.Point(206, 485);
+            this.pictureBoxWeapDamage.Location = new System.Drawing.Point(222, 507);
             this.pictureBoxWeapDamage.Name = "pictureBoxWeapDamage";
-            this.pictureBoxWeapDamage.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxWeapDamage.Size = new System.Drawing.Size(40, 39);
             this.pictureBoxWeapDamage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxWeapDamage.TabIndex = 18;
             this.pictureBoxWeapDamage.TabStop = false;
@@ -277,9 +280,9 @@ namespace Ну_рванули
             // 
             this.pictureBoxHealth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxHealth.Image = global::Ну_рванули.Properties.Resources.HP;
-            this.pictureBoxHealth.Location = new System.Drawing.Point(99, 485);
+            this.pictureBoxHealth.Location = new System.Drawing.Point(75, 507);
             this.pictureBoxHealth.Name = "pictureBoxHealth";
-            this.pictureBoxHealth.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxHealth.Size = new System.Drawing.Size(39, 39);
             this.pictureBoxHealth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxHealth.TabIndex = 17;
             this.pictureBoxHealth.TabStop = false;
@@ -288,9 +291,9 @@ namespace Ну_рванули
             // 
             this.pictureBoxSmallArmour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSmallArmour.Image = global::Ну_рванули.Properties.Resources.Screenshot_1;
-            this.pictureBoxSmallArmour.Location = new System.Drawing.Point(99, 450);
+            this.pictureBoxSmallArmour.Location = new System.Drawing.Point(75, 466);
             this.pictureBoxSmallArmour.Name = "pictureBoxSmallArmour";
-            this.pictureBoxSmallArmour.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxSmallArmour.Size = new System.Drawing.Size(39, 35);
             this.pictureBoxSmallArmour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxSmallArmour.TabIndex = 16;
             this.pictureBoxSmallArmour.TabStop = false;
@@ -299,9 +302,9 @@ namespace Ну_рванули
             // 
             this.pictureBoxSmallHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSmallHelm.Image = global::Ну_рванули.Properties.Resources.HelmetSiluette1;
-            this.pictureBoxSmallHelm.Location = new System.Drawing.Point(99, 418);
+            this.pictureBoxSmallHelm.Location = new System.Drawing.Point(75, 421);
             this.pictureBoxSmallHelm.Name = "pictureBoxSmallHelm";
-            this.pictureBoxSmallHelm.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxSmallHelm.Size = new System.Drawing.Size(39, 39);
             this.pictureBoxSmallHelm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxSmallHelm.TabIndex = 13;
             this.pictureBoxSmallHelm.TabStop = false;
@@ -310,9 +313,9 @@ namespace Ну_рванули
             // 
             this.pictureBoxMdef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxMdef.Image = global::Ну_рванули.Properties.Resources.ShieldSiluette;
-            this.pictureBoxMdef.Location = new System.Drawing.Point(206, 450);
+            this.pictureBoxMdef.Location = new System.Drawing.Point(222, 466);
             this.pictureBoxMdef.Name = "pictureBoxMdef";
-            this.pictureBoxMdef.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxMdef.Size = new System.Drawing.Size(39, 35);
             this.pictureBoxMdef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxMdef.TabIndex = 12;
             this.pictureBoxMdef.TabStop = false;
@@ -320,10 +323,10 @@ namespace Ну_рванули
             // pictureBoxMSkill
             // 
             this.pictureBoxMSkill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMSkill.Image = global::Ну_рванули.Properties.Resources.Скрещеные_мечи;
-            this.pictureBoxMSkill.Location = new System.Drawing.Point(206, 418);
+            this.pictureBoxMSkill.Image = global::Ну_рванули.Properties.Resources.png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper2;
+            this.pictureBoxMSkill.Location = new System.Drawing.Point(222, 421);
             this.pictureBoxMSkill.Name = "pictureBoxMSkill";
-            this.pictureBoxMSkill.Size = new System.Drawing.Size(26, 26);
+            this.pictureBoxMSkill.Size = new System.Drawing.Size(39, 39);
             this.pictureBoxMSkill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMSkill.TabIndex = 11;
             this.pictureBoxMSkill.TabStop = false;
@@ -333,7 +336,7 @@ namespace Ну_рванули
             this.pictureShield.BackColor = System.Drawing.Color.Gainsboro;
             this.pictureShield.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureShield.BackgroundImage")));
             this.pictureShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureShield.Location = new System.Drawing.Point(254, 226);
+            this.pictureShield.Location = new System.Drawing.Point(317, 229);
             this.pictureShield.Name = "pictureShield";
             this.pictureShield.Size = new System.Drawing.Size(100, 150);
             this.pictureShield.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -342,9 +345,9 @@ namespace Ну_рванули
             // 
             // pictureWeapon
             // 
-            this.pictureWeapon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureWeapon.BackgroundImage")));
             this.pictureWeapon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureWeapon.Location = new System.Drawing.Point(42, 226);
+            this.pictureWeapon.Image = global::Ну_рванули.Properties.Resources.Grey;
+            this.pictureWeapon.Location = new System.Drawing.Point(14, 229);
             this.pictureWeapon.Name = "pictureWeapon";
             this.pictureWeapon.Size = new System.Drawing.Size(100, 150);
             this.pictureWeapon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -354,17 +357,19 @@ namespace Ну_рванули
             // pictureArmour
             // 
             this.pictureArmour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureArmour.Location = new System.Drawing.Point(148, 227);
+            this.pictureArmour.Image = global::Ну_рванули.Properties.Resources.Grey;
+            this.pictureArmour.Location = new System.Drawing.Point(164, 229);
             this.pictureArmour.Name = "pictureArmour";
             this.pictureArmour.Size = new System.Drawing.Size(100, 150);
-            this.pictureArmour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureArmour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureArmour.TabIndex = 1;
             this.pictureArmour.TabStop = false;
             // 
             // pictureHelmet
             // 
             this.pictureHelmet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureHelmet.Location = new System.Drawing.Point(148, 96);
+            this.pictureHelmet.Image = global::Ну_рванули.Properties.Resources.Grey;
+            this.pictureHelmet.Location = new System.Drawing.Point(164, 96);
             this.pictureHelmet.Name = "pictureHelmet";
             this.pictureHelmet.Size = new System.Drawing.Size(100, 91);
             this.pictureHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -376,7 +381,7 @@ namespace Ну_рванули
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(405, 633);
+            this.ClientSize = new System.Drawing.Size(440, 633);
             this.Controls.Add(this.confirmedbutt);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.name);

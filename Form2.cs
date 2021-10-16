@@ -17,6 +17,7 @@ namespace Ну_рванули
         /* переменная для обмена данными между Form1 и Form2 */
         public string helm_armor;
         public string helm_image;
+        public int inthelm_armor;
         public Form2()
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace Ну_рванули
         {
             /* переносим все показатели на арену */
             TBHelmarmor.Text = helm_armor;
+
             /* переносим фото */
             pictureHelmet.Image = Image.FromFile(helm_image);
         }
