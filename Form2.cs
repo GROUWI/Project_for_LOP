@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Ну_рванули
 {
@@ -33,8 +34,20 @@ namespace Ну_рванули
         }
         private void choose_Click_1(object sender, EventArgs e)
         {
-            /* задаем параметры протвника */
+            /* рандомайзер для картинок шлема */
             Random h_armorenemy = new Random();
+            string[] ways = new string[16];
+            int i = 1;
+            string directoryPath = @"E:\Для VS\Ну рванули 1.3\Helmets";
+            var pngshelm = Directory.EnumerateFiles(directoryPath, "*.png");
+            foreach (var png in pngshelm)
+            {
+                ways[i-1] = png;
+                i++;
+            }
+            pictureHelmetenemy.Image = Image.FromFile(ways[h_armorenemy.Next(1, 16)]);
+
+
             TBHelmarmorenemy.Text = h_armorenemy.Next(30, 250).ToString();
             Random b_armorenemy = new Random();
             TBBodyarmorenemy.Text = b_armorenemy.Next(35, 300).ToString();
