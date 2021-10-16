@@ -123,6 +123,26 @@ namespace Ну_рванули.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-sword-computer-icons-ice-axe-angle-black-desktop-wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper1 {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-sword-computer-icons-ice-axe-angle-black-desktop-wallpaper1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_1 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot_1", resourceCulture);
@@ -156,6 +176,16 @@ namespace Ну_рванули.Properties {
         internal static System.Drawing.Bitmap Скрещеные_мечи {
             get {
                 object obj = ResourceManager.GetObject("Скрещеные мечи", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Скрещеные_мечи1 {
+            get {
+                object obj = ResourceManager.GetObject("Скрещеные мечи1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
