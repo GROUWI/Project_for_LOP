@@ -28,18 +28,19 @@ namespace Ну_рванули
     }
     class Weapon
     {
-        private int min_damage;
-        private int max_damage;
-        private float armor_coef;
+        public string w_name;
+        public int min_damage { get; set; }
+        public int max_damage { get; set; }
+        public double armor_coef { get; set; }
         private string w_image;
-
+        public Weapon(string name, int min, int max, double coef) { w_name = name; min_damage = min; max_damage = max; armor_coef = coef; }
         public void setWeaponImage(string filename) { w_image = filename; }
         public string getWeaponImage() { return w_image; }
     }
-    class DoubleWeapon : Weapon
+    /*class DoubleWeapon : Weapon
     {
         private string w_image;
-    }
+    }*/
     class Shield
     {
         private int m_def;

@@ -34,64 +34,65 @@ namespace Ну_рванули
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBoxWeapDamage = new System.Windows.Forms.TextBox();
-            this.textBoxHealth = new System.Windows.Forms.TextBox();
-            this.textBoxSmallHelm = new System.Windows.Forms.TextBox();
-            this.textBoxMDef = new System.Windows.Forms.TextBox();
-            this.textBoxMSkill = new System.Windows.Forms.TextBox();
-            this.textBoxSmallArmour = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.DamageLogs = new System.Windows.Forms.ComboBox();
-            this.fight = new System.Windows.Forms.Button();
+            this.choose = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.TBWeapDamage = new System.Windows.Forms.TextBox();
+            this.TBHealth = new System.Windows.Forms.TextBox();
+            this.TBHelmarmor = new System.Windows.Forms.TextBox();
+            this.TBMDef = new System.Windows.Forms.TextBox();
+            this.TBMSkill = new System.Windows.Forms.TextBox();
+            this.TBBodyarmor = new System.Windows.Forms.TextBox();
+            this.TBBodyarmorenemy = new System.Windows.Forms.TextBox();
+            this.TBMSkillenemy = new System.Windows.Forms.TextBox();
+            this.TBMDefenemy = new System.Windows.Forms.TextBox();
+            this.TBHelmarmorenemy = new System.Windows.Forms.TextBox();
+            this.TBHealthenemy = new System.Windows.Forms.TextBox();
+            this.TBWeapDamageenemy = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWeapDamage = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHealth = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSmallArmour = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSmallHelm = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMdef = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMSkill = new System.Windows.Forms.PictureBox();
             this.pictureShield = new System.Windows.Forms.PictureBox();
             this.pictureWeapon = new System.Windows.Forms.PictureBox();
             this.pictureArmour = new System.Windows.Forms.PictureBox();
             this.pictureHelmet = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapDamage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallArmour)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallHelm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMdef)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMSkill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWeapon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureArmour)).BeginInit();
@@ -139,86 +140,6 @@ namespace Ну_рванули
             this.button1.Text = "Создание Персонажа";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBoxWeapDamage
-            // 
-            this.textBoxWeapDamage.BackColor = System.Drawing.Color.Crimson;
-            this.textBoxWeapDamage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxWeapDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxWeapDamage.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxWeapDamage.Location = new System.Drawing.Point(194, 460);
-            this.textBoxWeapDamage.Multiline = true;
-            this.textBoxWeapDamage.Name = "textBoxWeapDamage";
-            this.textBoxWeapDamage.ReadOnly = true;
-            this.textBoxWeapDamage.Size = new System.Drawing.Size(66, 26);
-            this.textBoxWeapDamage.TabIndex = 87;
-            this.textBoxWeapDamage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxHealth
-            // 
-            this.textBoxHealth.BackColor = System.Drawing.Color.DarkRed;
-            this.textBoxHealth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxHealth.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxHealth.Location = new System.Drawing.Point(87, 460);
-            this.textBoxHealth.Name = "textBoxHealth";
-            this.textBoxHealth.Size = new System.Drawing.Size(66, 26);
-            this.textBoxHealth.TabIndex = 83;
-            this.textBoxHealth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxSmallHelm
-            // 
-            this.textBoxSmallHelm.BackColor = System.Drawing.Color.LightSlateGray;
-            this.textBoxSmallHelm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSmallHelm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSmallHelm.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxSmallHelm.Location = new System.Drawing.Point(87, 393);
-            this.textBoxSmallHelm.Name = "textBoxSmallHelm";
-            this.textBoxSmallHelm.ReadOnly = true;
-            this.textBoxSmallHelm.Size = new System.Drawing.Size(64, 26);
-            this.textBoxSmallHelm.TabIndex = 82;
-            this.textBoxSmallHelm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxMDef
-            // 
-            this.textBoxMDef.BackColor = System.Drawing.Color.Sienna;
-            this.textBoxMDef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMDef.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMDef.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxMDef.Location = new System.Drawing.Point(194, 425);
-            this.textBoxMDef.Multiline = true;
-            this.textBoxMDef.Name = "textBoxMDef";
-            this.textBoxMDef.ReadOnly = true;
-            this.textBoxMDef.Size = new System.Drawing.Size(66, 26);
-            this.textBoxMDef.TabIndex = 78;
-            this.textBoxMDef.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxMSkill
-            // 
-            this.textBoxMSkill.BackColor = System.Drawing.Color.Sienna;
-            this.textBoxMSkill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxMSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMSkill.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxMSkill.Location = new System.Drawing.Point(194, 393);
-            this.textBoxMSkill.Multiline = true;
-            this.textBoxMSkill.Name = "textBoxMSkill";
-            this.textBoxMSkill.ReadOnly = true;
-            this.textBoxMSkill.Size = new System.Drawing.Size(66, 26);
-            this.textBoxMSkill.TabIndex = 77;
-            this.textBoxMSkill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxSmallArmour
-            // 
-            this.textBoxSmallArmour.BackColor = System.Drawing.Color.LightSlateGray;
-            this.textBoxSmallArmour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxSmallArmour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSmallArmour.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBoxSmallArmour.Location = new System.Drawing.Point(87, 425);
-            this.textBoxSmallArmour.Name = "textBoxSmallArmour";
-            this.textBoxSmallArmour.ReadOnly = true;
-            this.textBoxSmallArmour.Size = new System.Drawing.Size(64, 26);
-            this.textBoxSmallArmour.TabIndex = 76;
-            this.textBoxSmallArmour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -237,86 +158,6 @@ namespace Ну_рванули
             this.label4.TabIndex = 117;
             this.label4.Text = "Имя персонажа:";
             // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.Crimson;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox5.Location = new System.Drawing.Point(660, 460);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(66, 26);
-            this.textBox5.TabIndex = 114;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.DarkRed;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox6.Location = new System.Drawing.Point(553, 460);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(66, 26);
-            this.textBox6.TabIndex = 110;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.LightSlateGray;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox7.Location = new System.Drawing.Point(553, 393);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(64, 26);
-            this.textBox7.TabIndex = 109;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.Sienna;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox8.Location = new System.Drawing.Point(660, 425);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(66, 26);
-            this.textBox8.TabIndex = 105;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.Sienna;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox9.Location = new System.Drawing.Point(660, 393);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(66, 26);
-            this.textBox9.TabIndex = 104;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.LightSlateGray;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox10.Location = new System.Drawing.Point(553, 425);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(64, 26);
-            this.textBox10.TabIndex = 103;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // DamageLogs
             // 
             this.DamageLogs.FormattingEnabled = true;
@@ -326,15 +167,16 @@ namespace Ну_рванули
             this.DamageLogs.TabIndex = 122;
             this.DamageLogs.Text = "Logs";
             // 
-            // fight
+            // choose
             // 
-            this.fight.Location = new System.Drawing.Point(300, 436);
-            this.fight.Name = "fight";
-            this.fight.Size = new System.Drawing.Size(194, 54);
-            this.fight.TabIndex = 123;
-            this.fight.Text = "Бой";
-            this.fight.UseVisualStyleBackColor = true;
-            this.fight.Click += new System.EventHandler(this.fight_Click);
+            this.choose.Location = new System.Drawing.Point(300, 411);
+            this.choose.Name = "choose";
+            this.choose.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.choose.Size = new System.Drawing.Size(194, 54);
+            this.choose.TabIndex = 123;
+            this.choose.Text = "Подбор противника";
+            this.choose.UseVisualStyleBackColor = true;
+            this.choose.Click += new System.EventHandler(this.choose_Click_1);
             // 
             // textBox2
             // 
@@ -356,6 +198,7 @@ namespace Ну_рванули
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(167, 20);
             this.textBox1.TabIndex = 92;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox3
             // 
@@ -363,75 +206,310 @@ namespace Ну_рванули
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(167, 20);
             this.textBox3.TabIndex = 120;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // pictureBox11
+            // TBWeapDamage
             // 
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox11.Location = new System.Drawing.Point(339, 273);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(104, 60);
-            this.pictureBox11.TabIndex = 124;
-            this.pictureBox11.TabStop = false;
+            this.TBWeapDamage.BackColor = System.Drawing.Color.Crimson;
+            this.TBWeapDamage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBWeapDamage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBWeapDamage.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBWeapDamage.Location = new System.Drawing.Point(185, 460);
+            this.TBWeapDamage.Multiline = true;
+            this.TBWeapDamage.Name = "TBWeapDamage";
+            this.TBWeapDamage.ReadOnly = true;
+            this.TBWeapDamage.Size = new System.Drawing.Size(66, 26);
+            this.TBWeapDamage.TabIndex = 136;
+            this.TBWeapDamage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox1
+            // TBHealth
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(628, 460);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox1.TabIndex = 113;
-            this.pictureBox1.TabStop = false;
+            this.TBHealth.BackColor = System.Drawing.Color.DarkRed;
+            this.TBHealth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBHealth.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBHealth.Location = new System.Drawing.Point(78, 460);
+            this.TBHealth.Name = "TBHealth";
+            this.TBHealth.Size = new System.Drawing.Size(66, 26);
+            this.TBHealth.TabIndex = 132;
+            this.TBHealth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox2
+            // TBHelmarmor
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(521, 460);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox2.TabIndex = 112;
-            this.pictureBox2.TabStop = false;
+            this.TBHelmarmor.BackColor = System.Drawing.Color.LightSlateGray;
+            this.TBHelmarmor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBHelmarmor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBHelmarmor.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBHelmarmor.Location = new System.Drawing.Point(78, 393);
+            this.TBHelmarmor.Name = "TBHelmarmor";
+            this.TBHelmarmor.ReadOnly = true;
+            this.TBHelmarmor.Size = new System.Drawing.Size(64, 26);
+            this.TBHelmarmor.TabIndex = 131;
+            this.TBHelmarmor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox3
+            // TBMDef
             // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(521, 425);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox3.TabIndex = 111;
-            this.pictureBox3.TabStop = false;
+            this.TBMDef.BackColor = System.Drawing.Color.Sienna;
+            this.TBMDef.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBMDef.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBMDef.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBMDef.Location = new System.Drawing.Point(185, 425);
+            this.TBMDef.Multiline = true;
+            this.TBMDef.Name = "TBMDef";
+            this.TBMDef.ReadOnly = true;
+            this.TBMDef.Size = new System.Drawing.Size(66, 26);
+            this.TBMDef.TabIndex = 127;
+            this.TBMDef.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox4
+            // TBMSkill
             // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(521, 393);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox4.TabIndex = 108;
-            this.pictureBox4.TabStop = false;
+            this.TBMSkill.BackColor = System.Drawing.Color.Sienna;
+            this.TBMSkill.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBMSkill.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBMSkill.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBMSkill.Location = new System.Drawing.Point(185, 393);
+            this.TBMSkill.Multiline = true;
+            this.TBMSkill.Name = "TBMSkill";
+            this.TBMSkill.ReadOnly = true;
+            this.TBMSkill.Size = new System.Drawing.Size(66, 26);
+            this.TBMSkill.TabIndex = 126;
+            this.TBMSkill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pictureBox5
+            // TBBodyarmor
             // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(628, 425);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox5.TabIndex = 107;
-            this.pictureBox5.TabStop = false;
+            this.TBBodyarmor.BackColor = System.Drawing.Color.LightSlateGray;
+            this.TBBodyarmor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBBodyarmor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBBodyarmor.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBBodyarmor.Location = new System.Drawing.Point(78, 425);
+            this.TBBodyarmor.Name = "TBBodyarmor";
+            this.TBBodyarmor.ReadOnly = true;
+            this.TBBodyarmor.Size = new System.Drawing.Size(64, 26);
+            this.TBBodyarmor.TabIndex = 125;
+            this.TBBodyarmor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TBBodyarmorenemy
+            // 
+            this.TBBodyarmorenemy.BackColor = System.Drawing.Color.LightSlateGray;
+            this.TBBodyarmorenemy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBBodyarmorenemy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBBodyarmorenemy.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBBodyarmorenemy.Location = new System.Drawing.Point(561, 425);
+            this.TBBodyarmorenemy.Name = "TBBodyarmorenemy";
+            this.TBBodyarmorenemy.ReadOnly = true;
+            this.TBBodyarmorenemy.Size = new System.Drawing.Size(64, 26);
+            this.TBBodyarmorenemy.TabIndex = 125;
+            this.TBBodyarmorenemy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TBMSkillenemy
+            // 
+            this.TBMSkillenemy.BackColor = System.Drawing.Color.Sienna;
+            this.TBMSkillenemy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBMSkillenemy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBMSkillenemy.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBMSkillenemy.Location = new System.Drawing.Point(668, 393);
+            this.TBMSkillenemy.Multiline = true;
+            this.TBMSkillenemy.Name = "TBMSkillenemy";
+            this.TBMSkillenemy.ReadOnly = true;
+            this.TBMSkillenemy.Size = new System.Drawing.Size(66, 26);
+            this.TBMSkillenemy.TabIndex = 126;
+            this.TBMSkillenemy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TBMDefenemy
+            // 
+            this.TBMDefenemy.BackColor = System.Drawing.Color.Sienna;
+            this.TBMDefenemy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBMDefenemy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBMDefenemy.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBMDefenemy.Location = new System.Drawing.Point(668, 425);
+            this.TBMDefenemy.Multiline = true;
+            this.TBMDefenemy.Name = "TBMDefenemy";
+            this.TBMDefenemy.ReadOnly = true;
+            this.TBMDefenemy.Size = new System.Drawing.Size(66, 26);
+            this.TBMDefenemy.TabIndex = 127;
+            this.TBMDefenemy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TBHelmarmorenemy
+            // 
+            this.TBHelmarmorenemy.BackColor = System.Drawing.Color.LightSlateGray;
+            this.TBHelmarmorenemy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBHelmarmorenemy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBHelmarmorenemy.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBHelmarmorenemy.Location = new System.Drawing.Point(561, 393);
+            this.TBHelmarmorenemy.Name = "TBHelmarmorenemy";
+            this.TBHelmarmorenemy.ReadOnly = true;
+            this.TBHelmarmorenemy.Size = new System.Drawing.Size(64, 26);
+            this.TBHelmarmorenemy.TabIndex = 131;
+            this.TBHelmarmorenemy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TBHealthenemy
+            // 
+            this.TBHealthenemy.BackColor = System.Drawing.Color.DarkRed;
+            this.TBHealthenemy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBHealthenemy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBHealthenemy.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBHealthenemy.Location = new System.Drawing.Point(561, 460);
+            this.TBHealthenemy.Name = "TBHealthenemy";
+            this.TBHealthenemy.Size = new System.Drawing.Size(66, 26);
+            this.TBHealthenemy.TabIndex = 132;
+            this.TBHealthenemy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // TBWeapDamageenemy
+            // 
+            this.TBWeapDamageenemy.BackColor = System.Drawing.Color.Crimson;
+            this.TBWeapDamageenemy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TBWeapDamageenemy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBWeapDamageenemy.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.TBWeapDamageenemy.Location = new System.Drawing.Point(668, 460);
+            this.TBWeapDamageenemy.Multiline = true;
+            this.TBWeapDamageenemy.Name = "TBWeapDamageenemy";
+            this.TBWeapDamageenemy.ReadOnly = true;
+            this.TBWeapDamageenemy.Size = new System.Drawing.Size(66, 26);
+            this.TBWeapDamageenemy.TabIndex = 136;
+            this.TBWeapDamageenemy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(628, 393);
+            this.pictureBox6.Image = global::Ну_рванули.Properties.Resources.SwordHitHeart111;
+            this.pictureBox6.Location = new System.Drawing.Point(636, 460);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(26, 26);
-            this.pictureBox6.TabIndex = 106;
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 135;
             this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox12.Image = global::Ну_рванули.Properties.Resources.SwordHitHeart111;
+            this.pictureBox12.Location = new System.Drawing.Point(153, 460);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 135;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Image = global::Ну_рванули.Properties.Resources.HP;
+            this.pictureBox5.Location = new System.Drawing.Point(529, 460);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 134;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox13.Image = global::Ну_рванули.Properties.Resources.HP;
+            this.pictureBox13.Location = new System.Drawing.Point(46, 460);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 134;
+            this.pictureBox13.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Image = global::Ну_рванули.Properties.Resources.Screenshot_1;
+            this.pictureBox4.Location = new System.Drawing.Point(529, 425);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 133;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox14.Image = global::Ну_рванули.Properties.Resources.Screenshot_1;
+            this.pictureBox14.Location = new System.Drawing.Point(46, 425);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 133;
+            this.pictureBox14.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Image = global::Ну_рванули.Properties.Resources.HelmetSiluette1;
+            this.pictureBox3.Location = new System.Drawing.Point(529, 393);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 130;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = global::Ну_рванули.Properties.Resources.ShieldSiluette;
+            this.pictureBox2.Location = new System.Drawing.Point(636, 425);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 129;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox15.Image = global::Ну_рванули.Properties.Resources.HelmetSiluette1;
+            this.pictureBox15.Location = new System.Drawing.Point(46, 393);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 130;
+            this.pictureBox15.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::Ну_рванули.Properties.Resources.png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper1;
+            this.pictureBox1.Location = new System.Drawing.Point(636, 393);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 128;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox16.Image = global::Ну_рванули.Properties.Resources.ShieldSiluette;
+            this.pictureBox16.Location = new System.Drawing.Point(153, 425);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 129;
+            this.pictureBox16.TabStop = false;
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox17.Image = global::Ну_рванули.Properties.Resources.png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper;
+            this.pictureBox17.Location = new System.Drawing.Point(153, 393);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(26, 26);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 128;
+            this.pictureBox17.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Image = global::Ну_рванули.Properties.Resources.Скрещеные_мечи;
+            this.pictureBox11.Location = new System.Drawing.Point(342, 258);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(104, 83);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 124;
+            this.pictureBox11.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -476,66 +554,6 @@ namespace Ну_рванули
             this.pictureBox10.TabIndex = 95;
             this.pictureBox10.TabStop = false;
             // 
-            // pictureBoxWeapDamage
-            // 
-            this.pictureBoxWeapDamage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxWeapDamage.BackgroundImage")));
-            this.pictureBoxWeapDamage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxWeapDamage.Location = new System.Drawing.Point(162, 460);
-            this.pictureBoxWeapDamage.Name = "pictureBoxWeapDamage";
-            this.pictureBoxWeapDamage.Size = new System.Drawing.Size(26, 26);
-            this.pictureBoxWeapDamage.TabIndex = 86;
-            this.pictureBoxWeapDamage.TabStop = false;
-            // 
-            // pictureBoxHealth
-            // 
-            this.pictureBoxHealth.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHealth.BackgroundImage")));
-            this.pictureBoxHealth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxHealth.Location = new System.Drawing.Point(55, 460);
-            this.pictureBoxHealth.Name = "pictureBoxHealth";
-            this.pictureBoxHealth.Size = new System.Drawing.Size(26, 26);
-            this.pictureBoxHealth.TabIndex = 85;
-            this.pictureBoxHealth.TabStop = false;
-            // 
-            // pictureBoxSmallArmour
-            // 
-            this.pictureBoxSmallArmour.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSmallArmour.BackgroundImage")));
-            this.pictureBoxSmallArmour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxSmallArmour.Location = new System.Drawing.Point(55, 425);
-            this.pictureBoxSmallArmour.Name = "pictureBoxSmallArmour";
-            this.pictureBoxSmallArmour.Size = new System.Drawing.Size(26, 26);
-            this.pictureBoxSmallArmour.TabIndex = 84;
-            this.pictureBoxSmallArmour.TabStop = false;
-            // 
-            // pictureBoxSmallHelm
-            // 
-            this.pictureBoxSmallHelm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSmallHelm.BackgroundImage")));
-            this.pictureBoxSmallHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxSmallHelm.Location = new System.Drawing.Point(55, 393);
-            this.pictureBoxSmallHelm.Name = "pictureBoxSmallHelm";
-            this.pictureBoxSmallHelm.Size = new System.Drawing.Size(26, 26);
-            this.pictureBoxSmallHelm.TabIndex = 81;
-            this.pictureBoxSmallHelm.TabStop = false;
-            // 
-            // pictureBoxMdef
-            // 
-            this.pictureBoxMdef.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxMdef.BackgroundImage")));
-            this.pictureBoxMdef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMdef.Location = new System.Drawing.Point(162, 425);
-            this.pictureBoxMdef.Name = "pictureBoxMdef";
-            this.pictureBoxMdef.Size = new System.Drawing.Size(26, 26);
-            this.pictureBoxMdef.TabIndex = 80;
-            this.pictureBoxMdef.TabStop = false;
-            // 
-            // pictureBoxMSkill
-            // 
-            this.pictureBoxMSkill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxMSkill.BackgroundImage")));
-            this.pictureBoxMSkill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMSkill.Location = new System.Drawing.Point(162, 393);
-            this.pictureBoxMSkill.Name = "pictureBoxMSkill";
-            this.pictureBoxMSkill.Size = new System.Drawing.Size(26, 26);
-            this.pictureBoxMSkill.TabIndex = 79;
-            this.pictureBoxMSkill.TabStop = false;
-            // 
             // pictureShield
             // 
             this.pictureShield.BackColor = System.Drawing.Color.Gainsboro;
@@ -579,31 +597,53 @@ namespace Ну_рванули
             this.pictureHelmet.TabIndex = 68;
             this.pictureHelmet.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(300, 471);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(194, 54);
+            this.button3.TabIndex = 123;
+            this.button3.Text = "Бой";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(787, 633);
+            this.Controls.Add(this.TBWeapDamageenemy);
+            this.Controls.Add(this.TBWeapDamage);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.TBHealthenemy);
+            this.Controls.Add(this.TBHelmarmorenemy);
+            this.Controls.Add(this.TBHealth);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.TBHelmarmor);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.TBMDefenemy);
+            this.Controls.Add(this.pictureBox17);
+            this.Controls.Add(this.TBMSkillenemy);
+            this.Controls.Add(this.TBMDef);
+            this.Controls.Add(this.TBBodyarmorenemy);
+            this.Controls.Add(this.TBMSkill);
+            this.Controls.Add(this.TBBodyarmor);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.fight);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.choose);
             this.Controls.Add(this.DamageLogs);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox9);
@@ -614,18 +654,6 @@ namespace Ну_рванули
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBoxWeapDamage);
-            this.Controls.Add(this.pictureBoxWeapDamage);
-            this.Controls.Add(this.pictureBoxHealth);
-            this.Controls.Add(this.pictureBoxSmallArmour);
-            this.Controls.Add(this.textBoxHealth);
-            this.Controls.Add(this.textBoxSmallHelm);
-            this.Controls.Add(this.pictureBoxSmallHelm);
-            this.Controls.Add(this.pictureBoxMdef);
-            this.Controls.Add(this.pictureBoxMSkill);
-            this.Controls.Add(this.textBoxMDef);
-            this.Controls.Add(this.textBoxMSkill);
-            this.Controls.Add(this.textBoxSmallArmour);
             this.Controls.Add(this.pictureShield);
             this.Controls.Add(this.pictureWeapon);
             this.Controls.Add(this.pictureArmour);
@@ -633,23 +661,23 @@ namespace Ну_рванули
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapDamage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallArmour)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallHelm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMdef)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMSkill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureShield)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureWeapon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureArmour)).EndInit();
@@ -664,46 +692,47 @@ namespace Ну_рванули
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBoxWeapDamage;
-        private System.Windows.Forms.PictureBox pictureBoxWeapDamage;
-        private System.Windows.Forms.PictureBox pictureBoxHealth;
-        private System.Windows.Forms.PictureBox pictureBoxSmallArmour;
-        private System.Windows.Forms.TextBox textBoxHealth;
-        private System.Windows.Forms.TextBox textBoxSmallHelm;
-        private System.Windows.Forms.PictureBox pictureBoxSmallHelm;
-        private System.Windows.Forms.PictureBox pictureBoxMdef;
-        private System.Windows.Forms.PictureBox pictureBoxMSkill;
-        private System.Windows.Forms.TextBox textBoxMDef;
-        private System.Windows.Forms.TextBox textBoxMSkill;
-        private System.Windows.Forms.TextBox textBoxSmallArmour;
         private System.Windows.Forms.PictureBox pictureShield;
         private System.Windows.Forms.PictureBox pictureWeapon;
         private System.Windows.Forms.PictureBox pictureArmour;
         private System.Windows.Forms.PictureBox pictureHelmet;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.ComboBox DamageLogs;
-        private System.Windows.Forms.Button fight;
+        private System.Windows.Forms.Button choose;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TBWeapDamage;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.TextBox TBHealth;
+        private System.Windows.Forms.TextBox TBHelmarmor;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.TextBox TBMDef;
+        private System.Windows.Forms.TextBox TBMSkill;
+        private System.Windows.Forms.TextBox TBBodyarmor;
+        private System.Windows.Forms.TextBox TBBodyarmorenemy;
+        private System.Windows.Forms.TextBox TBMSkillenemy;
+        private System.Windows.Forms.TextBox TBMDefenemy;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox TBHelmarmorenemy;
+        private System.Windows.Forms.TextBox TBHealthenemy;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.TextBox TBWeapDamageenemy;
+        private System.Windows.Forms.Button button3;
     }
 }

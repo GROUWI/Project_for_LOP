@@ -150,5 +150,14 @@
   <ItemGroup>
     <None Include="Beauty\ShieldSiluette.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Скрещеные мечи.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-sword-computer-icons-ice-axe-angle-black-desktop-wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-sword-computer-icons-ice-axe-angle-black-desktop-wallpaper1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
