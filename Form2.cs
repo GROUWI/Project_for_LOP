@@ -82,7 +82,7 @@ namespace Ну_рванули
 
 
 // Формула формального попадания по врагу
-    int = Hitchance;
+    int Hitchance;
     if (MSkill - Mdef < 0){
         Hitchance = 5;
     }
