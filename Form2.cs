@@ -73,3 +73,88 @@ namespace Ну_рванули
 
     }
 }
+
+
+/*
+    
+// Минимальный процент попадания = 5;
+// Максимальный процент попадания = 95;
+
+
+// Формула формального попадания по врагу
+    int = Hitchance;
+    if (MSkill - Mdef < 0){
+        Hitchance = 5;
+    }
+    else
+    {
+        Hitchance = 5 + ((MSkill - MDef) / MSkill)*90;
+    }
+
+// Шанс попадания в голову
+    int HeadHitChance = 25;    
+
+// Функция рандом, значения от 0 до 1
+    class rnd
+    {
+        static void Main(string[] args)
+        {
+            Random rand = new Random();
+            int[] rndArray = new int[3];
+            for (int i = 0; i < 3; i++)
+            {
+                rndArray[i] = rand.NextDouble(0, 1);
+            } 
+        }
+    }
+    
+// Формула подсчета урона у оружия
+    Damage = MinDamgae + rndArray[0]*(MaxDamage - MinDamage);   //Damage как чистый урон оружия без коэфов
+
+
+// Подсчет места попадания во врага (1 - попал, 0 - промазал)
+    if (HitChance < rndArray[]*100)
+    {
+        BodyHit = 1;
+        if (rndArray[1]*100) < 25
+        {
+            HeadHit = 1;
+            BodyHit = 0;
+        }
+        else
+        {
+            HeadHit = 0;
+        }
+    }
+    else
+    {
+        BodyHit = 0;
+    }
+
+
+    int TempArmor = Armor; //В самом начале боя
+    int TempHealth=Health; //В самом начале боя
+    int ArmorBorder = 75; //Граничное значение брони ниже которого начнется сниматься хп
+// Формула фактического попадания по врагу с random и уроном по броне и хп
+    
+    {
+    if (TempArmor >= Damage*armor_coef)
+    {
+        TempArmor = TempArmor - Damage*armor_coef;
+        if (TempArmor <= ArmorBorder)
+        {
+            TempHealth = TempHealth - Damage*(1 - (TempArmor / Armor Border));
+        }
+    }
+    else
+    {
+        TempArmor = 0;
+        if (TempArmor >= ArmorBorder)
+        {
+            TempHealth = TempHealth - Damage;
+        }
+    }
+
+
+
+ */

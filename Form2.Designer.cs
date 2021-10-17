@@ -34,14 +34,9 @@ namespace Ну_рванули
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.DamageLogs = new System.Windows.Forms.ComboBox();
             this.choose = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.TBWeapDamage = new System.Windows.Forms.TextBox();
             this.TBHealth = new System.Windows.Forms.TextBox();
             this.TBHelmarmor = new System.Windows.Forms.TextBox();
@@ -76,6 +71,11 @@ namespace Ну_рванули
             this.pictureArmour = new System.Windows.Forms.PictureBox();
             this.pictureHelmet = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -140,24 +140,6 @@ namespace Ну_рванули
             this.button1.Text = "Создание Персонажа";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(504, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 118;
-            this.label3.Text = "Прозвище:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(476, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
-            this.label4.TabIndex = 117;
-            this.label4.Text = "Имя персонажа:";
-            // 
             // DamageLogs
             // 
             this.DamageLogs.FormattingEnabled = true;
@@ -169,10 +151,10 @@ namespace Ну_рванули
             // 
             // choose
             // 
-            this.choose.Location = new System.Drawing.Point(300, 411);
+            this.choose.Location = new System.Drawing.Point(467, 172);
             this.choose.Name = "choose";
             this.choose.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.choose.Size = new System.Drawing.Size(194, 54);
+            this.choose.Size = new System.Drawing.Size(100, 48);
             this.choose.TabIndex = 123;
             this.choose.Text = "Подбор противника";
             this.choose.UseVisualStyleBackColor = true;
@@ -184,29 +166,6 @@ namespace Ну_рванули
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(167, 20);
             this.textBox2.TabIndex = 93;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(573, 44);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 20);
-            this.textBox4.TabIndex = 119;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(110, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 92;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(573, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 20);
-            this.textBox3.TabIndex = 120;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // TBWeapDamage
             // 
@@ -599,12 +558,53 @@ namespace Ну_рванули
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(300, 471);
+            this.button3.Location = new System.Drawing.Point(300, 425);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(194, 54);
             this.button3.TabIndex = 123;
             this.button3.Text = "Бой";
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(110, 43);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(167, 21);
+            this.comboBox1.TabIndex = 137;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(573, 43);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(167, 21);
+            this.comboBox2.TabIndex = 141;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(573, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(167, 20);
+            this.textBox1.TabIndex = 140;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(504, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 139;
+            this.label3.Text = "Прозвище:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(476, 47);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 138;
+            this.label4.Text = "Имя персонажа:";
             // 
             // Form2
             // 
@@ -612,6 +612,11 @@ namespace Ну_рванули
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(787, 633);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.TBWeapDamageenemy);
             this.Controls.Add(this.TBWeapDamage);
             this.Controls.Add(this.pictureBox6);
@@ -640,16 +645,11 @@ namespace Ну_рванули
             this.Controls.Add(this.button3);
             this.Controls.Add(this.choose);
             this.Controls.Add(this.DamageLogs);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureHelmetenemy);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -696,8 +696,6 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureWeapon;
         private System.Windows.Forms.PictureBox pictureArmour;
         private System.Windows.Forms.PictureBox pictureHelmet;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -706,9 +704,6 @@ namespace Ну_рванули
         private System.Windows.Forms.Button choose;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox TBWeapDamage;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
@@ -734,5 +729,10 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox TBWeapDamageenemy;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

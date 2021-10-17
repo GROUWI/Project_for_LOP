@@ -102,19 +102,19 @@ namespace Ну_рванули
 
             List<Weapon> w_ch = new List<Weapon>
         {
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("Dagger", 10, 20, 0.6),
-            new Weapon ("Falchion", 20, 30, 0.8),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
-            new Weapon ("empty", 0, 0, 0),
+            new Weapon ("empty", 5, 10, 0, 0),
+            new Weapon ("Dagger", 15, 35, 0.6, 0),
+            new Weapon ("Falchion", 35, 45, 0.7, 0),
+            new Weapon ("Arming Sword", 40, 45, 0.8, 0),
+            new Weapon ("Morning Star", 30, 45, 1, 0),
+            new Weapon ("Winged Mace", 35, 55, 1.1, 0),
+            new Weapon ("Boar Spear", 30, 35, 0.95, 0),
+            new Weapon ("Handaxe", 30, 45, 1.2, 0),
+            new Weapon ("Fighting Axe", 35, 55, 1.3, 0),
+            new Weapon ("Flail", 25, 55, 1, 0.1),
+            new Weapon ("Scramasax", 30, 45, 0.8, 0),
+            new Weapon ("Military Cleaver", 40, 60, 0.9, 0),
+            new Weapon ("Warhammer", 30, 40, 2.25, 0),
         };
             directoryPath = @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded";
             existsDir = Directory.Exists(directoryPath);
@@ -133,6 +133,43 @@ namespace Ну_рванули
             comboBoxWeapon.DisplayMember = "w_name";
             comboBoxWeapon.ValueMember = "min_damage";
         }
+            List<DoubleWeapon> w_ch = new List<DoubleWeapon>
+        {
+            new DoubleWeapon ("empty", 5, 10, 0, 0),
+            new DoubleWeapon ("Longsword", 65, 85, 1, 0.05),
+            new DoubleWeapon ("Zweihander", 85, 100, 1, 0.05),
+            new DoubleWeapon ("Two-Handed Flanged Mace", 75, 95, 1.25, 0),
+            new DoubleWeapon ("Woodcutter`s Axe", 35, 70, 1.25, 0),
+            new DoubleWeapon ("Bardiche", 75, 95, 1.3, 0.05),
+            new DoubleWeapon ("Greataxe", 80, 100, 1.5, 0),
+            new DoubleWeapon ("Two-Handed Flail", 40, 80, 1.1, 0.15),
+            new DoubleWeapon ("Two-Handed", 60, 90, 2.0, 0),
+            new DoubleWeapon ("Pike", 60, 80, 1, 0.05),
+            new DoubleWeapon ("Billhook", 55, 85, 1.4, 0.05),
+        };
+        
+        /*
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         *Добавить директориpath, у меня жалуется на неправильный путь
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         */
 
         private void Form1_Load(object sender, EventArgs e)
         {   /* выводим информацию о броне первого шлема */

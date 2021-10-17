@@ -33,15 +33,17 @@ namespace Ну_рванули
         public string defis = "--";
         public int max_damage { get; set; }
         public double armor_coef { get; set; }
+        public double HHitChance { get; set; }
         private string w_image;
-        public Weapon(string name, int min, int max, double coef) { w_name = name; min_damage = min; max_damage = max; armor_coef = coef; }
+        public Weapon(string name, int min, int max, double coef, double headChance) { w_name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance; }
         public void setWeaponImage(string filename) { w_image = filename; }
         public string getWeaponImage() { return w_image; }
     }
-    /*class DoubleWeapon : Weapon
+    class DoubleWeapon : Weapon
     {
-        private string w_image;
-    }*/
+        public string dw_name { get; set; }
+        public DoubleWeapon(string name, int min, int max, double coef, double headChance) { dw_name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance;  }
+    }
     class Shield
     {
         private int m_def;
