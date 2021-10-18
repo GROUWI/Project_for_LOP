@@ -29,7 +29,6 @@ namespace Ну_рванули
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBoxHelmet = new System.Windows.Forms.ComboBox();
             this.comboBoxWeapon = new System.Windows.Forms.ComboBox();
             this.comboBoxArmour = new System.Windows.Forms.ComboBox();
@@ -334,8 +333,8 @@ namespace Ну_рванули
             // pictureShield
             // 
             this.pictureShield.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureShield.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureShield.BackgroundImage")));
             this.pictureShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureShield.Image = global::Ну_рванули.Properties.Resources.Grey;
             this.pictureShield.Location = new System.Drawing.Point(317, 229);
             this.pictureShield.Name = "pictureShield";
             this.pictureShield.Size = new System.Drawing.Size(100, 150);
