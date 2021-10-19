@@ -29,6 +29,7 @@ namespace Ну_рванули
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.arena = new System.Windows.Forms.Button();
             this.createchar = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@ namespace Ну_рванули
             this.TBMDefEnemy = new System.Windows.Forms.TextBox();
             this.TBMSkillEnemy = new System.Windows.Forms.TextBox();
             this.TBBodyarmorEnemy = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.fightbutt = new System.Windows.Forms.Button();
             this.TBWeapDamage = new System.Windows.Forms.TextBox();
             this.TBHealth = new System.Windows.Forms.TextBox();
             this.TBHelmarmor = new System.Windows.Forms.TextBox();
@@ -69,6 +70,7 @@ namespace Ну_рванули
             this.pictureArmourenemy = new System.Windows.Forms.PictureBox();
             this.pictureHelmetenemy = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapDamage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallArmour)).BeginInit();
@@ -215,15 +217,16 @@ namespace Ну_рванули
             this.TBBodyarmorEnemy.Size = new System.Drawing.Size(89, 35);
             this.TBBodyarmorEnemy.TabIndex = 170;
             // 
-            // button3
+            // fightbutt
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe Script", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(335, 380);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 54);
-            this.button3.TabIndex = 123;
-            this.button3.Text = "Бой";
-            this.button3.UseVisualStyleBackColor = true;
+            this.fightbutt.Font = new System.Drawing.Font("Segoe Script", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fightbutt.Location = new System.Drawing.Point(335, 380);
+            this.fightbutt.Name = "fightbutt";
+            this.fightbutt.Size = new System.Drawing.Size(194, 54);
+            this.fightbutt.TabIndex = 123;
+            this.fightbutt.Text = "Бой";
+            this.fightbutt.UseVisualStyleBackColor = true;
+            this.fightbutt.Click += new System.EventHandler(this.fightbutt_Click_1);
             // 
             // TBWeapDamage
             // 
@@ -548,6 +551,10 @@ namespace Ну_рванули
             this.pictureBox11.TabIndex = 124;
             this.pictureBox11.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 2000;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -587,7 +594,7 @@ namespace Ну_рванули
             this.Controls.Add(this.pictureArmourenemy);
             this.Controls.Add(this.pictureHelmetenemy);
             this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.fightbutt);
             this.Controls.Add(this.choose);
             this.Controls.Add(this.DamageLogs);
             this.Controls.Add(this.name);
@@ -644,7 +651,7 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureWeaponenemy;
         private System.Windows.Forms.PictureBox pictureArmourenemy;
         private System.Windows.Forms.PictureBox pictureHelmetenemy;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button fightbutt;
         private System.Windows.Forms.TextBox TBWeapDamage;
         private System.Windows.Forms.PictureBox pictureBoxWeapDamage;
         private System.Windows.Forms.PictureBox pictureBoxHealth;
@@ -662,5 +669,6 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureArmour;
         private System.Windows.Forms.PictureBox pictureHelmet;
         private System.Windows.Forms.Label name;
+        private System.Windows.Forms.Timer timer1;
     }
 }

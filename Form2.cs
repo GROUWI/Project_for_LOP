@@ -8,11 +8,242 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace Ну_рванули
 {
     public partial class Form2 : Form
     {
+        int[] MyTurn( int m_skill, int min_damage, int max_damage, double armor_coef,
+            int helm_armorEnemy, int body_armorEnemy, int hpEnemy, int m_defEnemy,  int ArmorBorder)
+        {
+            int Hitchance;
+            /* НАШ ХОД */
+            // Функция рандом, значения от 0 до 1
+            double[] rndArray = new double[3];
+            Random rand = new Random();
+            for (int i = 0; i < 3; i++)
+            {
+                rndArray[i] = rand.NextDouble();
+            }
+            /* проверка шанса попадания */
+            if (m_skill - m_defEnemy < 0)
+            {
+                Hitchance = 5;
+            }
+            else
+            {
+                Hitchance = 5 + 90 * (m_skill - m_defEnemy) / m_skill;
+            }
+            // Формула подсчета урона у оружия
+            //Damage как чистый урон оружия без коэфов
+            int Damage = Convert.ToInt32(min_damage + rndArray[0] * (max_damage - min_damage));
+            // Подсчет места попадания во врага (1 - попал, 0 - промазал)
+            bool BodyHit = true;
+            bool HeadHit = true;
+            if (Hitchance < rndArray[0] * 100)
+            {
+                BodyHit = true;
+                if ((rndArray[1] * 100) < 25)
+                {
+                    HeadHit = true;
+                    BodyHit = false;
+                }
+                else
+                    HeadHit = false;
+            }
+            else
+                BodyHit = false;
+            // Формула фактического попадания по врагу с random и уроном по броне и хп
+            /* для шлема */
+            if (helm_armorEnemy >= Convert.ToInt32(Damage * armor_coef))
+            {
+                /* если броня шлема врага больше чем урон оружия * коэф по броне
+                 * то идет урон по броне шлема по данной формуле*/
+                helm_armorEnemy = Convert.ToInt32(helm_armorEnemy - Damage * armor_coef);
+
+                if ((helm_armorEnemy <= ArmorBorder) & (HeadHit == true))
+                {
+                    /* если броня шлема врага меньше чем граничное значение
+                    * то идет урон по ХП по данной формуле*/
+                    hpEnemy = Convert.ToInt32(hpEnemy - 1.5 * Damage * (1 - (helm_armorEnemy / ArmorBorder)));
+                }
+
+            }
+            else
+            {
+                /* если броня шлема врага меньше чем урон оружия * коэф по броне
+                 * то броня игнорируется*/
+                helm_armorEnemy = 0;
+                hpEnemy = Convert.ToInt32(hpEnemy - Damage * (1 - (helm_armorEnemy / ArmorBorder)));
+            }
+
+            /* для доспеха аналогично, как и для шлема */
+            if (body_armorEnemy >= Damage * armor_coef)
+            {
+                body_armorEnemy = Convert.ToInt32(body_armorEnemy - Damage * armor_coef);
+
+                if ((body_armorEnemy <= ArmorBorder) & (BodyHit == true))
+                {
+                    hpEnemy = Convert.ToInt32(hpEnemy - Damage * (1 - (body_armorEnemy / ArmorBorder)));
+                }
+            }
+            else
+            {
+                body_armorEnemy = 0;
+                hpEnemy = Convert.ToInt32(hpEnemy - Damage * (1 - (body_armorEnemy / ArmorBorder)));
+            }
+
+            TBHealthEnemy.Text = hpEnemy.ToString() + "/100";
+            Thread.Sleep(1000);
+            int[] returnesfuncEnemy = new int[3];
+            returnesfuncEnemy[0] = helm_armorEnemy;
+            returnesfuncEnemy[1] = body_armorEnemy;
+            returnesfuncEnemy[2] = hpEnemy;
+            return returnesfuncEnemy;
+            
+        }
+        int[] EnemyTurn(int helm_armor, int body_armor, int hp, int m_def, int m_skillEnemy,
+            int min_damageEnemy, int max_damageEnemy, double armor_coefEnemy, int ArmorBorder)
+        {
+            int Hitchance;
+            /* ХОД ПРОТИВНИКА */
+            // Функция рандом, значения от 0 до 1
+            double[] rndArray = new double[3];
+            Random rand = new Random();
+            armor_coefEnemy = rand.NextDouble();
+            for (int i = 0; i < 3; i++)
+            {
+                rndArray[i] = rand.NextDouble();
+            }
+            /* проверка шанса попадания */
+            if (m_skillEnemy - m_def < 0)
+            {
+                Hitchance = 5;
+            }
+            else
+            {
+                Hitchance = 5 + 90 * (m_skillEnemy - m_def) / m_skillEnemy;
+            }
+            // Формула подсчета урона у оружия
+            //Damage как чистый урон оружия без коэфов
+            int Damage = Convert.ToInt32(min_damageEnemy + rndArray[0] * (max_damageEnemy - min_damageEnemy));
+            // Подсчет места попадания в нас (1 - попал, 0 - промазал)
+            bool BodyHit = true;
+            bool HeadHit = true;
+            if (Hitchance < rndArray[0] * 100)
+            {
+                BodyHit = true;
+                if ((rndArray[1] * 100) < 25)
+                {
+                    HeadHit = true;
+                    BodyHit = false;
+                }
+                else
+                    HeadHit = false;
+            }
+            else
+                BodyHit = false;
+            // Формула фактического попадания по нам с random и уроном по броне и хп
+            /* для шлема */
+            if (helm_armor >= Convert.ToInt32(Damage * armor_coefEnemy))
+            {
+                /* если броня шлема наща больше чем урон оружия * коэф по броне
+                 * то идет урон по броне шлема по данной формуле*/
+                helm_armor = Convert.ToInt32(helm_armor - Damage * armor_coefEnemy);
+
+                if ((helm_armor <= ArmorBorder) & (HeadHit == true))
+                {
+                    /* если броня шлема наша меньше чем граничное значение
+                    * то идет урон по ХП по данной формуле*/
+                    hp = Convert.ToInt32(hp - 1.5 * Damage * (1 - (helm_armor / ArmorBorder)));
+                    
+                }
+
+            }
+            else
+            {
+                /* если броня шлема наша меньше чем урон оружия * коэф по броне
+                 * то броня игнорируется*/
+                helm_armor = 0;
+                hp = Convert.ToInt32(hp - Damage * (1 - (helm_armor / ArmorBorder)));
+            }
+
+            /* для доспеха аналогично, как и для шлема */
+            if (body_armor >= Damage * armor_coefEnemy)
+            {
+                body_armor = Convert.ToInt32(body_armor - Damage * armor_coefEnemy);
+
+                if ((body_armor <= ArmorBorder) & (BodyHit == true))
+                {
+                    hp = Convert.ToInt32(hp - Damage * (1 - (body_armor / ArmorBorder)));
+                }
+            }
+            else
+            {
+                body_armor = 0;
+                hp = Convert.ToInt32(hp - Damage * (1 - (body_armor / ArmorBorder)));
+            }
+            TBHealth.Text = hp.ToString() + "/100";
+            Thread.Sleep(1000);
+            int[] returnesfunc = new int[3]; 
+            returnesfunc[0] = helm_armor;
+            returnesfunc[1] = body_armor;
+            returnesfunc[2] = hp;
+            return returnesfunc;
+        }
+
+    
+
+    // Минимальный процент попадания = 5;
+    // Максимальный процент попадания = 95;
+    public void Fight()
+        {
+            int[] storage = new int[3];
+            storage[0] = value[0];
+            storage[1] = value[1];
+            storage[2] = value[2];
+            int[] storageEnemy = new int[3];
+            storageEnemy[0] = valueEnemy[0];
+            storageEnemy[1] = valueEnemy[1];
+            storageEnemy[2] = valueEnemy[2];
+            int[] returnes = new int[3];
+            int[] returnesEnemy = new int[3];
+            int hp = storage[2];
+            int hpEnemy = storageEnemy[2];
+            /* деремся пока живы */
+            while (hp >= 0 || hpEnemy >= 0)
+            {
+                returnesEnemy = MyTurn(value[3], value[5], value[6], armor_coef,
+            storageEnemy[0], storageEnemy[1], hpEnemy, valueEnemy[4], 75);
+                storageEnemy[0] = returnesEnemy[0];
+                storageEnemy[1] = returnesEnemy[1];
+                hpEnemy = returnesEnemy[2];
+                
+                if (hpEnemy <= 0)
+                {
+                    TBHealthEnemy.Text = "0/100";
+                    MessageBox.Show("вы выиграли");
+                    break;
+                }
+                
+                    
+                
+                returnes = EnemyTurn(storage[0], storage[1], hp, value[4], valueEnemy[3],
+             valueEnemy[5], valueEnemy[6], armor_coefEnemy, 75);
+                storage[0] = returnes[0];
+                storage[1] = returnes[1];
+                hp = returnes[2];
+                
+                if (hp <= 0)
+                {
+                    TBHealth.Text = "0/100";
+                    MessageBox.Show("вы проиграли");
+                    break;
+                }
+            }
+        }
+
         public string ImageItemEnemy(int N, string directoryPath)
         {
 
@@ -28,14 +259,15 @@ namespace Ну_рванули
             return ways[randomImage.Next(1, N)];
 
         }
-        public int tempHP;
-        public string strtempHP;
         /* переменные для обмена данными между Form1 и Form2 */
+        Random ItemEnemy = new Random();
         public string[] text = new string[6];
         public int[] value = new int[7];
         public int[] valueEnemy = new int[7];
         public string[] image_form2 = new string[4];
         public string name_v;
+        public double armor_coef;
+        public double armor_coefEnemy;
         public Form2()
         {
             InitializeComponent();
@@ -64,19 +296,18 @@ namespace Ну_рванули
         private void choose_Click_1(object sender, EventArgs e)
         {
             /* рандомайзер для картинок амуниции */
-            pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
-            pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
-            pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
-            pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
+            //pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
+            //pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
+            //pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
+            //pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
             /* задаем параметры противника */
-            Random ItemEnemy = new Random();
             valueEnemy[0] = ItemEnemy.Next(30, 250); // helm  armour enemy
             valueEnemy[1] = ItemEnemy.Next(40, 300); // body armour enemy 
             valueEnemy[2] = 100;    // health enemy
             valueEnemy[3] = ItemEnemy.Next(30, 100); // melle skill enemy
             valueEnemy[4] = ItemEnemy.Next(40, 70); // melle def enemy
-            valueEnemy[5] = ItemEnemy.Next(10, 80);// min damage enemy
-            valueEnemy[6] = ItemEnemy.Next(30, 110);// max damage enemy
+            valueEnemy[5] = ItemEnemy.Next(10, 40);// min damage enemy
+            valueEnemy[6] = ItemEnemy.Next(50, 110);// max damage enemy
             /* выводим их на экран */
             TBHelmarmorEnemy.Text = valueEnemy[0].ToString();
             TBBodyarmorEnemy.Text = valueEnemy[1].ToString();
@@ -98,164 +329,10 @@ namespace Ну_рванули
         {
 
         }
+        private void fightbutt_Click_1(object sender, EventArgs e)
+        {
+            Fight();
+            TBHealth.Text = "100/100";
+        }
     }
 }
-
-
-
-
-/*
-  
- 
- 
-
-    public Fight()
-    {
-        // Минимальный процент попадания = 5;
-        // Максимальный процент попадания = 95;
-
-        int TempArmor = Armor;  // В самом начале боя
-        int TempHealth=Health;  // В самом начале боя
-        int ArmorBorder = 75;   // Граничное значение брони ниже которого начнется сниматься хп
-        int HeadHitChance = 25; // Шанс попадания в голову
-
-        // Формула формального попадания по врагу
-        int Hitchance;
-        if (MSkill - Mdef < 0)
-        {
-            Hitchance = 5;
-        }
-        else
-        {
-            Hitchance = 5 + ((MSkill - MDef) / MSkill) * 90;
-        }
-
-            
-
-        // Функция рандом, значения от 0 до 1
-        class rnd
-        {
-            static void Main(string[] args)
-            {
-                Random rand = new Random();
-                int[] rndArray = new int[3];
-                for (int i = 0; i < 3; i++)
-                {
-                    rndArray[i] = rand.NextDouble(0, 1);
-                } 
-            }
-        }
-    
-        // Формула подсчета урона у оружия
-        Damage = MinDamgae + rndArray[0]*(MaxDamage - MinDamage);   //Damage как чистый урон оружия без коэфов
-
-
-        // Подсчет места попадания во врага (1 - попал, 0 - промазал)
-        if (HitChance < rndArray[]*100)
-        {
-            BodyHit = 1;
-            if (rndArray[1]*100) < 25
-            {
-                HeadHit = 1;
-                BodyHit = 0;
-            }
-            else
-            {
-                HeadHit = 0;
-            }
-        }
-        else
-        {
-            BodyHit = 0;
-        }
-
-
-        
-        // Формула фактического попадания по врагу с random и уроном по броне и хп
-    
-        public Hit
-        {
-            if (TempArmor >= Damage*armor_coef)
-            {
-                TempArmor = TempArmor - Damage*armor_coef;
-        
-                if (TempArmor <= ArmorBorder) and (HeadHit = 1)
-                {
-                    TempHealth = TempHealth - 1,5*Damage*(1 - (TempArmor / Armor Border));
-                }
-                else
-                {
-                    TempHealth = TempHealth - Damage*(1 - (TempArmor / Armor Border));
-                }
-            }
-        else
-        {
-            TempArmor = 0;
-            if (TempArmor >= ArmorBorder)
-            {
-                TempHealth = TempHealth - Damage;
-            }
-        }
-
-
-
-
-
-
-    public class Example
-    {
-        private static System.Timers.Timer aTimer;
-   
-        public static void Main()
-        {
-            SetTimer();
-
-            Console.WriteLine("Бой начался в {0:HH:mm:ss.fff}", DateTime.Now);
-            Console.ReadLine();
-            aTimer.Stop();
-            aTimer.Dispose();
-      
-        if (health <= 0)
-        {
-            DamageLogs.WriteLine("Вы проиграли. Бой закончен");
-        }
-        if (healthenemy <= 0)
-        {
-            DamageLogs.WriteLine("Вы выиграли. Бой закончен");
-        }
-
-        private static void SetTimer()
-        {
-            // Таймер на 2.5 секунды.
-            aTimer = new System.Timers.Timer(2500);
-            // Функции на таймер
-            aTimer.Elapsed += OnTimedEvent;
-            aTimer.AutoReset = true;
-            aTimer.Enabled = true;
-        }
-
-    private static void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-            Console.WriteLine("The Elapsed event was raised at {0:HH:mm:ss.fff}",
-                          e.SignalTime);
-        }
-    }  
-  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- *\

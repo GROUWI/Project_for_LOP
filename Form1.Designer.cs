@@ -72,46 +72,46 @@ namespace Ну_рванули
             this.chooseHelmet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chooseHelmet.DisplayMember = "1";
             this.chooseHelmet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chooseHelmet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseHelmet.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseHelmet.FormattingEnabled = true;
             this.chooseHelmet.ImeMode = System.Windows.Forms.ImeMode.On;
             this.chooseHelmet.Location = new System.Drawing.Point(148, 193);
             this.chooseHelmet.Name = "chooseHelmet";
             this.chooseHelmet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chooseHelmet.Size = new System.Drawing.Size(132, 28);
+            this.chooseHelmet.Size = new System.Drawing.Size(132, 27);
             this.chooseHelmet.TabIndex = 4;
             this.chooseHelmet.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmet_SelectedIndexChanged);
             // 
             // chooseWeapon
             // 
             this.chooseWeapon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chooseWeapon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseWeapon.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseWeapon.FormattingEnabled = true;
             this.chooseWeapon.Location = new System.Drawing.Point(0, 385);
             this.chooseWeapon.Name = "chooseWeapon";
-            this.chooseWeapon.Size = new System.Drawing.Size(132, 28);
+            this.chooseWeapon.Size = new System.Drawing.Size(132, 27);
             this.chooseWeapon.TabIndex = 5;
             this.chooseWeapon.SelectedIndexChanged += new System.EventHandler(this.comboBoxWeapon_SelectedIndexChanged);
             // 
             // chooseArmour
             // 
             this.chooseArmour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chooseArmour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseArmour.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseArmour.FormattingEnabled = true;
             this.chooseArmour.Location = new System.Drawing.Point(148, 385);
             this.chooseArmour.Name = "chooseArmour";
-            this.chooseArmour.Size = new System.Drawing.Size(132, 28);
+            this.chooseArmour.Size = new System.Drawing.Size(132, 27);
             this.chooseArmour.TabIndex = 6;
             this.chooseArmour.SelectedIndexChanged += new System.EventHandler(this.comboBoxArmour_SelectedIndexChanged);
             // 
             // chooseShield
             // 
             this.chooseShield.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chooseShield.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseShield.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseShield.FormattingEnabled = true;
             this.chooseShield.Location = new System.Drawing.Point(296, 385);
             this.chooseShield.Name = "chooseShield";
-            this.chooseShield.Size = new System.Drawing.Size(132, 28);
+            this.chooseShield.Size = new System.Drawing.Size(132, 27);
             this.chooseShield.TabIndex = 7;
             this.chooseShield.SelectedIndexChanged += new System.EventHandler(this.comboBoxShield_SelectedIndexChanged);
             // 

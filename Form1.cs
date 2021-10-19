@@ -178,7 +178,7 @@ namespace Ну_рванули
 			TBHelmarmor.Text = chooseHelmet.SelectedValue.ToString();
 			TBBodyarmor.Text = chooseArmour.SelectedValue.ToString();
 			TBHealth.Text = "100/100";
-			TBMSkill.Text = "0";
+			TBMSkill.Text = "60";
 			TBMDef.Text = chooseShield.SelectedValue.ToString();
 			TBWeapDamage.Text = chooseWeapon.SelectedValue.ToString() +
 			"--" + "10";
@@ -281,7 +281,7 @@ namespace Ну_рванули
 			arena.image_form2 = image;
 
             /* числовые показатели для формул */
-            int[] value = new int[7];
+			int[] value = new int[7];
             Weapon chosen = (Weapon)chooseWeapon.SelectedItem;
             value[0] = Convert.ToInt32(TBHelmarmor.Text); // helm armour
             value[1] = Convert.ToInt32(TBBodyarmor.Text); // body armour
@@ -290,7 +290,9 @@ namespace Ну_рванули
             value[4] = Convert.ToInt32(TBMDef.Text); // melle defense
             value[5] = chosen.min_damage; // min_damage weapon
             value[6] = chosen.max_damage; // max_damage weapon
-            arena.value = value;
+			double armor_coef = chosen.armor_coef;
+			arena.armor_coef = armor_coef;
+			arena.value = value;
             string name_v;
 			name_v = name.Text;
 			arena.name_v = name_v;
