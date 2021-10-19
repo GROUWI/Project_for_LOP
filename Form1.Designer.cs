@@ -72,46 +72,46 @@ namespace Ну_рванули
             this.chooseHelmet.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chooseHelmet.DisplayMember = "1";
             this.chooseHelmet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chooseHelmet.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseHelmet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseHelmet.FormattingEnabled = true;
             this.chooseHelmet.ImeMode = System.Windows.Forms.ImeMode.On;
             this.chooseHelmet.Location = new System.Drawing.Point(148, 193);
             this.chooseHelmet.Name = "chooseHelmet";
             this.chooseHelmet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.chooseHelmet.Size = new System.Drawing.Size(132, 27);
+            this.chooseHelmet.Size = new System.Drawing.Size(132, 28);
             this.chooseHelmet.TabIndex = 4;
             this.chooseHelmet.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmet_SelectedIndexChanged);
             // 
             // chooseWeapon
             // 
             this.chooseWeapon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chooseWeapon.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseWeapon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseWeapon.FormattingEnabled = true;
             this.chooseWeapon.Location = new System.Drawing.Point(0, 385);
             this.chooseWeapon.Name = "chooseWeapon";
-            this.chooseWeapon.Size = new System.Drawing.Size(132, 27);
+            this.chooseWeapon.Size = new System.Drawing.Size(132, 28);
             this.chooseWeapon.TabIndex = 5;
             this.chooseWeapon.SelectedIndexChanged += new System.EventHandler(this.comboBoxWeapon_SelectedIndexChanged);
             // 
             // chooseArmour
             // 
             this.chooseArmour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chooseArmour.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseArmour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseArmour.FormattingEnabled = true;
             this.chooseArmour.Location = new System.Drawing.Point(148, 385);
             this.chooseArmour.Name = "chooseArmour";
-            this.chooseArmour.Size = new System.Drawing.Size(132, 27);
+            this.chooseArmour.Size = new System.Drawing.Size(132, 28);
             this.chooseArmour.TabIndex = 6;
             this.chooseArmour.SelectedIndexChanged += new System.EventHandler(this.comboBoxArmour_SelectedIndexChanged);
             // 
             // chooseShield
             // 
             this.chooseShield.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.chooseShield.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseShield.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chooseShield.FormattingEnabled = true;
             this.chooseShield.Location = new System.Drawing.Point(296, 385);
             this.chooseShield.Name = "chooseShield";
-            this.chooseShield.Size = new System.Drawing.Size(132, 27);
+            this.chooseShield.Size = new System.Drawing.Size(132, 28);
             this.chooseShield.TabIndex = 7;
             this.chooseShield.SelectedIndexChanged += new System.EventHandler(this.comboBoxShield_SelectedIndexChanged);
             // 
@@ -229,10 +229,10 @@ namespace Ну_рванули
             // 
             // name
             // 
-            this.name.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.Location = new System.Drawing.Point(189, 54);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(167, 27);
+            this.name.Size = new System.Drawing.Size(167, 26);
             this.name.TabIndex = 24;
             this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
@@ -250,6 +250,7 @@ namespace Ну_рванули
             // 
             // pictureBoxWeapDamage
             // 
+            this.pictureBoxWeapDamage.BackgroundImage = global::Ну_рванули.Properties.Resources.SwordHitHeart111;
             this.pictureBoxWeapDamage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxWeapDamage.Location = new System.Drawing.Point(222, 507);
             this.pictureBoxWeapDamage.Name = "pictureBoxWeapDamage";
@@ -260,6 +261,7 @@ namespace Ну_рванули
             // 
             // pictureBoxHealth
             // 
+            this.pictureBoxHealth.BackgroundImage = global::Ну_рванули.Properties.Resources.HP;
             this.pictureBoxHealth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxHealth.Location = new System.Drawing.Point(75, 507);
             this.pictureBoxHealth.Name = "pictureBoxHealth";
@@ -270,6 +272,7 @@ namespace Ну_рванули
             // 
             // pictureBoxSmallArmour
             // 
+            this.pictureBoxSmallArmour.BackgroundImage = global::Ну_рванули.Properties.Resources._16488;
             this.pictureBoxSmallArmour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSmallArmour.Location = new System.Drawing.Point(75, 466);
             this.pictureBoxSmallArmour.Name = "pictureBoxSmallArmour";
@@ -280,6 +283,7 @@ namespace Ну_рванули
             // 
             // pictureBoxSmallHelm
             // 
+            this.pictureBoxSmallHelm.BackgroundImage = global::Ну_рванули.Properties.Resources.HelmetSiluette1;
             this.pictureBoxSmallHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxSmallHelm.Location = new System.Drawing.Point(75, 421);
             this.pictureBoxSmallHelm.Name = "pictureBoxSmallHelm";
@@ -290,6 +294,7 @@ namespace Ну_рванули
             // 
             // pictureBoxMdef
             // 
+            this.pictureBoxMdef.BackgroundImage = global::Ну_рванули.Properties.Resources.ShieldSiluette;
             this.pictureBoxMdef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxMdef.Location = new System.Drawing.Point(222, 466);
             this.pictureBoxMdef.Name = "pictureBoxMdef";
@@ -300,6 +305,7 @@ namespace Ну_рванули
             // 
             // pictureBoxMSkill
             // 
+            this.pictureBoxMSkill.BackgroundImage = global::Ну_рванули.Properties.Resources.png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper;
             this.pictureBoxMSkill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxMSkill.Location = new System.Drawing.Point(222, 421);
             this.pictureBoxMSkill.Name = "pictureBoxMSkill";
