@@ -31,9 +31,10 @@ namespace Ну_рванули
         public int tempHP;
         public string strtempHP;
         /* переменные для обмена данными между Form1 и Form2 */
-        public string helm_armor;
+        public string[] text = new string[5];
+        public int[] value = new int[4];
+        public string[] image = new string[4];
         public string helm_image;
-        public int inthelm_armor;
         public Form2()
         {
             InitializeComponent();
@@ -42,17 +43,27 @@ namespace Ну_рванули
         private void Form2_Load(object sender, EventArgs e)
         {
             /* переносим все показатели на арену */
-            TBHelmarmor.Text = helm_armor;
-
+            TBHelmarmor.Text = text[0];
+            TBBodyarmor.Text = text[1];
+            TBHealth.Text = text[2];
+            TBWeapDamage.Text = text[3];
+            TBMDef.Text = text[4];
+            //TBMSkill.Text = text[5];
             /* переносим фото */
-            pictureHelmet.Image = Image.FromFile(helm_image);
+            // не работает
+            pictureHelmet.Image = Image.FromFile(image[0]);
+            pictureArmour.Image = Image.FromFile(image[1]);
+            pictureWeapon.Image = Image.FromFile(image[2]);
+            pictureShield.Image = Image.FromFile(image[3]);
+            arena.Enabled = false;
+
         }
         private void choose_Click_1(object sender, EventArgs e)
         {
-            /* рандомайзер для картинок шлема */
+            /* рандомайзер для картинок амуниции */
             pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
             pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
-         //   pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Shields"));
+            pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
             pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
 
             //TBHelmarmorenemy.Text = h_armorenemy.Next(30, 250).ToString();
@@ -78,6 +89,12 @@ namespace Ну_рванули
 
         }
 
+        private void createchar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 createchar = new Form1();
+            createchar.Show();
+        }
     }
 }
 

@@ -38,7 +38,7 @@ namespace Ну_рванули
 				new Helmet ("Full Helm", 300),
 			};	
 			/* задание картинок шлемам через цикл */
-			string directoryPath = @"E:\Для VS\Ну рванули 1.3\Helmets";
+			string directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Helmets";
 			/*существует ли директория?*/
 			bool existsDir = Directory.Exists(directoryPath); 
 			if (existsDir)
@@ -56,9 +56,9 @@ namespace Ну_рванули
 			/* записываем весь список в комбобокс
 			 * DisplayMember - отображение названия
 			 * ValueMember - запись значений брони в своё название */
-			comboBoxHelmet.DataSource = h_ch;
-			comboBoxHelmet.DisplayMember = "Name";
-			comboBoxHelmet.ValueMember = "Armor";
+			chooseHelmet.DataSource = h_ch;
+			chooseHelmet.DisplayMember = "Name";
+			chooseHelmet.ValueMember = "Armor";
 
 			List<Armour> b_ch = new List<Armour>
 			{
@@ -82,7 +82,7 @@ namespace Ну_рванули
 				new Armour ("Coat of Plates", 320),
 			};
 			
-			directoryPath = @"E:\Для VS\Ну рванули 1.3\Armour";
+			directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Armour";
 			existsDir = Directory.Exists(directoryPath);
 			if (existsDir)
 			{   
@@ -95,9 +95,9 @@ namespace Ну_рванули
 					i++;
 				}
 			}
-			comboBoxArmour.DataSource = b_ch;
-			comboBoxArmour.DisplayMember = "Name";
-			comboBoxArmour.ValueMember = "Armor";
+			chooseArmour.DataSource = b_ch;
+			chooseArmour.DisplayMember = "Name";
+			chooseArmour.ValueMember = "Armor";
 
 			List<Weapon> w_ch = new List<Weapon>
 			{
@@ -126,7 +126,7 @@ namespace Ну_рванули
 				new TwoWeapon ("Pike", 60, 80, 1, 0.05),
 				new TwoWeapon ("Billhook", 55, 85, 1.4, 0.05),
 			};
-			directoryPath = @"E:\Для VS\Ну рванули 1.3\Weapons";
+			directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Weapons";
 			existsDir = Directory.Exists(directoryPath);
 			if (existsDir)
 			{
@@ -139,9 +139,9 @@ namespace Ну_рванули
 					i++;
 				}
 			}
-			comboBoxWeapon.DataSource = w_ch;
-			comboBoxWeapon.DisplayMember = "Name";
-			comboBoxWeapon.ValueMember = "min_damage";
+			chooseWeapon.DataSource = w_ch;
+			chooseWeapon.DisplayMember = "Name";
+			chooseWeapon.ValueMember = "min_damage";
 		
 
 			List<Shield> sh_ch = new List<Shield>
@@ -153,7 +153,7 @@ namespace Ну_рванули
 				new Shield ("WoodenShield", 50),
 			};
 
-				directoryPath = @"E:\Для VS\Ну рванули 1.3\Shields";
+				directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Shields";
 				existsDir = Directory.Exists(directoryPath);
 				if (existsDir)
 				{
@@ -166,64 +166,66 @@ namespace Ну_рванули
 						i++;
 					}
 				}
-			comboBoxShield.DataSource = sh_ch;
-			comboBoxShield.DisplayMember = "Name";
-			comboBoxShield.ValueMember = "m_def";
+			chooseShield.DataSource = sh_ch;
+			chooseShield.DisplayMember = "Name";
+			chooseShield.ValueMember = "m_def";
 
 
 				
 		}
 		private void Form1_Load(object sender, EventArgs e)
 		{   /* выводим информацию о броне первого шлема */
-			TBHelmarmor.Text = comboBoxHelmet.SelectedValue.ToString();
+			TBHelmarmor.Text = chooseHelmet.SelectedValue.ToString();
 
-			TBBodyarmor.Text = comboBoxArmour.SelectedValue.ToString();
-			TBWeapDamage.Text = comboBoxWeapon.SelectedValue.ToString() +
+			TBBodyarmor.Text = chooseArmour.SelectedValue.ToString();
+			TBWeapDamage.Text = chooseWeapon.SelectedValue.ToString() +
 			"--" + "10";
-			TBMDef.Text = comboBoxShield.SelectedValue.ToString();
+			TBMDef.Text = chooseShield.SelectedValue.ToString();
 			TBHealth.Text = "100/100";
 
 			confirmedbutt.Enabled = false;
 			createchar.Enabled = false;
-			arena.Enabled = false;
+			arenabutt.Enabled = false;
 
 
-			comboBoxHelmet.Enabled = true;
-			comboBoxArmour.Enabled = true;
-			comboBoxWeapon.Enabled = true;
-			comboBoxShield.Enabled = true;
+			chooseHelmet.Enabled = true;
+			chooseArmour.Enabled = true;
+			chooseWeapon.Enabled = true;
+			chooseShield.Enabled = true;
 			
 		}
 		
 		private void comboBoxHelmet_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			/* выводим информацию о броне выбранного шлема */
-			TBHelmarmor.Text = comboBoxHelmet.SelectedValue.ToString();
+			TBHelmarmor.Text = chooseHelmet.SelectedValue.ToString();
 			/* создаем временную переменную chosen_helm типа Helmet, чтобы использовать
 				* на ней функцию getHelmetImage() из класса*/
-			Helmet chosen = (Helmet)comboBoxHelmet.SelectedItem;
+			Helmet chosen = (Helmet)chooseHelmet.SelectedItem;
 			/* выводим изображение выбранного элемента из перечня
 				* заранее заданных*/                 
 			pictureHelmet.Image = Image.FromFile(chosen.getItemImage());     
 		}
 		private void comboBoxArmour_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			TBBodyarmor.Text = comboBoxArmour.SelectedValue.ToString();
-			Armour chosen = (Armour)comboBoxArmour.SelectedItem;
+			TBBodyarmor.Text = chooseArmour.SelectedValue.ToString();
+			Armour chosen = (Armour)chooseArmour.SelectedItem;
 			pictureArmour.Image = Image.FromFile(chosen.getItemImage());
 		}
 		private void comboBoxWeapon_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			string mindamage = comboBoxWeapon.SelectedValue.ToString();
-			Weapon chosen = (Weapon)comboBoxWeapon.SelectedItem;
-			// не знаю как разделить оружие на двойное и одиночное
+			string mindamage = chooseWeapon.SelectedValue.ToString();
+			Weapon chosen = (Weapon)chooseWeapon.SelectedItem;
+			
 			/* формируем нормальную запись дамага вытягивая max damage*/
 			TBWeapDamage.Text = mindamage + "--" + chosen.max_damage.ToString();
 			pictureWeapon.Image = Image.FromFile(chosen.getItemImage());
-			if (chosen != (Weapon)comboBoxWeapon.SelectedItem)
-            {
-				comboBoxShield.Enabled = false;
-			}
+
+			// не знаю как разделить оружие на двойное и одиночное
+			//if (chosen != (Weapon)comboBoxWeapon.SelectedItem)
+   //         {
+			//	comboBoxShield.Enabled = false;
+			//}
 			//else if (chosen == (TwoWeapon)comboBoxWeapon.SelectedItem)
    //         {
 			//	comboBoxShield.Enabled = false;
@@ -232,17 +234,22 @@ namespace Ну_рванули
 
 		private void comboBoxShield_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			TBMDef.Text = comboBoxShield.SelectedValue.ToString();
-			Shield chosen = (Shield)comboBoxShield.SelectedItem;
+			TBMDef.Text = chooseShield.SelectedValue.ToString();
+			Shield chosen = (Shield)chooseShield.SelectedItem;
 			pictureShield.Image = Image.FromFile(chosen.getItemImage());
 		}
 		private void confirmedbutt_Click(object sender, EventArgs e)
 		{
-			comboBoxHelmet.Enabled = false;
-			comboBoxArmour.Enabled = false;
-			comboBoxWeapon.Enabled = false;
-			comboBoxShield.Enabled = false;
-			arena.Enabled = true;
+			Form2 arena = new Form2();
+			
+
+			
+
+			chooseHelmet.Enabled = false;
+			chooseArmour.Enabled = false;
+			chooseWeapon.Enabled = false;
+			chooseShield.Enabled = false;
+			arenabutt.Enabled = true;
 			confirmedbutt.Enabled = false;
 		}
 		private void arena_Click(object sender, EventArgs e)
@@ -251,10 +258,37 @@ namespace Ну_рванули
 			this.Hide();
 			/* передаем данные в Форму2 */
 			Form2 arena = new Form2();
-			arena.helm_armor = TBHelmarmor.Text;
-			//////
-			arena.helm_image = pictureHelmet.ImageLocation;
-			arena.inthelm_armor = Convert.ToInt32(comboBoxHelmet.SelectedValue);
+			/* показатели в текст боксах */
+			string[] text = new string[5];
+			text[0] = TBHelmarmor.Text;
+			text[1] = TBBodyarmor.Text;
+			text[2] = TBHealth.Text;
+			text[3] = TBWeapDamage.Text;
+			text[4] = TBMDef.Text;
+			//text[5] = TBMSkill.Text
+			arena.text = text;
+
+			/* картинки */
+			string[] image = new string[4];
+			image[0] = pictureHelmet.ImageLocation;
+			image[1] = pictureArmour.ImageLocation;
+			image[2] = pictureWeapon.ImageLocation;
+			image[3] = pictureShield.ImageLocation;
+			arena.image = image;
+
+			/* числовые показатели для формул */
+			//int[] value = new int[6];
+			//Weapon chosen = (Weapon)chooseWeapon.SelectedItem;
+			//value[0] = Convert.ToInt32(TBHelmarmor.Text); // helm armour
+			//value[1] = Convert.ToInt32(TBBodyarmor.Text); // body armour
+			//value[2] = 100; //	health
+			//value[3] = chosen.min_damage; // min_damage weapon
+			//value[4] = chosen.max_damage; // max_damage weapon
+			//value[5] = Convert.ToInt32(TBMDef.Text); // melle defense
+			////value[6] = Convert.ToInt32(TBMSkill.Text); // melle skill
+			//arena.value = value;
+
+
 			arena.Show();  
 		}
 		private void name_TextChanged(object sender, EventArgs e)

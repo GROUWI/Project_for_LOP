@@ -73,39 +73,9 @@ namespace Ну_рванули.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BodyArmor_Barbarian {
-            get {
-                object obj = ResourceManager.GetObject("BodyArmor_Barbarian", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Grey {
             get {
                 object obj = ResourceManager.GetObject("Grey", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Helmets_ClosedPaddedFlatTop {
-            get {
-                object obj = ResourceManager.GetObject("Helmets_ClosedPaddedFlatTop", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Helmets_HeavyHornedPlateHelm {
-            get {
-                object obj = ResourceManager.GetObject("Helmets_HeavyHornedPlateHelm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
