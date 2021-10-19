@@ -193,6 +193,16 @@ namespace Ну_рванули.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap дуэлисты {
+            get {
+                object obj = ResourceManager.GetObject("дуэлисты", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Скрещеные_мечи {
             get {
                 object obj = ResourceManager.GetObject("Скрещеные мечи", resourceCulture);

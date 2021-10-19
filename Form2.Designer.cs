@@ -49,6 +49,11 @@ namespace Ну_рванули
             this.TBHelmarmorenemy = new System.Windows.Forms.TextBox();
             this.TBHealthenemy = new System.Windows.Forms.TextBox();
             this.TBWeapDamageenemy = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -62,6 +67,7 @@ namespace Ну_рванули
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -70,12 +76,6 @@ namespace Ну_рванули
             this.pictureWeapon = new System.Windows.Forms.PictureBox();
             this.pictureArmour = new System.Windows.Forms.PictureBox();
             this.pictureHelmet = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -151,6 +151,7 @@ namespace Ну_рванули
             // 
             // choose
             // 
+            this.choose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.choose.Location = new System.Drawing.Point(467, 172);
             this.choose.Name = "choose";
             this.choose.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -327,6 +328,47 @@ namespace Ну_рванули
             this.TBWeapDamageenemy.TabIndex = 136;
             this.TBWeapDamageenemy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(110, 43);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(167, 21);
+            this.comboBox1.TabIndex = 137;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(573, 43);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(167, 21);
+            this.comboBox2.TabIndex = 141;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(573, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(167, 20);
+            this.textBox1.TabIndex = 140;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(504, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 139;
+            this.label3.Text = "Прозвище:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(476, 47);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 13);
+            this.label4.TabIndex = 138;
+            this.label4.Text = "Имя персонажа:";
+            // 
             // pictureBox6
             // 
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -470,6 +512,15 @@ namespace Ну_рванули
             this.pictureBox11.TabIndex = 124;
             this.pictureBox11.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(300, 425);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(194, 54);
+            this.button3.TabIndex = 123;
+            this.button3.Text = "Бой";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Gainsboro;
@@ -555,56 +606,6 @@ namespace Ну_рванули
             this.pictureHelmet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureHelmet.TabIndex = 68;
             this.pictureHelmet.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(300, 425);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(194, 54);
-            this.button3.TabIndex = 123;
-            this.button3.Text = "Бой";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(110, 43);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(167, 21);
-            this.comboBox1.TabIndex = 137;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(573, 43);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(167, 21);
-            this.comboBox2.TabIndex = 141;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(573, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 140;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(504, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
-            this.label3.TabIndex = 139;
-            this.label3.Text = "Прозвище:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(476, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 13);
-            this.label4.TabIndex = 138;
-            this.label4.Text = "Имя персонажа:";
             // 
             // Form2
             // 

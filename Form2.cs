@@ -141,7 +141,11 @@ namespace Ну_рванули
     if (TempArmor >= Damage*armor_coef)
     {
         TempArmor = TempArmor - Damage*armor_coef;
-        if (TempArmor <= ArmorBorder)
+        if (TempArmor <= ArmorBorder) and (HeadHit = 1)
+        {
+            TempHealth = TempHealth - 1,5*Damage*(1 - (TempArmor / Armor Border));
+        }
+        else
         {
             TempHealth = TempHealth - Damage*(1 - (TempArmor / Armor Border));
         }
