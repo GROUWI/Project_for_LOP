@@ -33,7 +33,6 @@ namespace Ну_рванули
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.arena = new System.Windows.Forms.Button();
             this.createchar = new System.Windows.Forms.Button();
-            this.DamageLogs = new System.Windows.Forms.ComboBox();
             this.choose = new System.Windows.Forms.Button();
             this.TBWeapDamageEnemy = new System.Windows.Forms.TextBox();
             this.TBHealthEnemy = new System.Windows.Forms.TextBox();
@@ -117,15 +116,6 @@ namespace Ну_рванули
             this.createchar.Text = "Создание Персонажа";
             this.createchar.UseVisualStyleBackColor = false;
             this.createchar.Click += new System.EventHandler(this.createchar_Click);
-            // 
-            // DamageLogs
-            // 
-            this.DamageLogs.FormattingEnabled = true;
-            this.DamageLogs.Location = new System.Drawing.Point(335, 54);
-            this.DamageLogs.Name = "DamageLogs";
-            this.DamageLogs.Size = new System.Drawing.Size(194, 21);
-            this.DamageLogs.TabIndex = 122;
-            this.DamageLogs.Text = "Logs";
             // 
             // choose
             // 
@@ -543,7 +533,7 @@ namespace Ну_рванули
             // pictureBox11
             // 
             this.pictureBox11.BackgroundImage = global::Ну_рванули.Properties.Resources.Скрещеные_мечи;
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox11.Location = new System.Drawing.Point(352, 237);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(157, 119);
@@ -596,7 +586,6 @@ namespace Ну_рванули
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.fightbutt);
             this.Controls.Add(this.choose);
-            this.Controls.Add(this.DamageLogs);
             this.Controls.Add(this.name);
             this.Controls.Add(this.arena);
             this.Controls.Add(this.createchar);
@@ -632,7 +621,6 @@ namespace Ну_рванули
         #endregion
         private System.Windows.Forms.Button arena;
         private System.Windows.Forms.Button createchar;
-        private System.Windows.Forms.ComboBox DamageLogs;
         private System.Windows.Forms.Button choose;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.TextBox TBWeapDamageEnemy;

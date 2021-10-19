@@ -296,10 +296,10 @@ namespace Ну_рванули
         private void choose_Click_1(object sender, EventArgs e)
         {
             /* рандомайзер для картинок амуниции */
-            //pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
-            //pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
-            //pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
-            //pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
+            pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
+            pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
+            pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
+            pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
             /* задаем параметры противника */
             valueEnemy[0] = ItemEnemy.Next(30, 250); // helm  armour enemy
             valueEnemy[1] = ItemEnemy.Next(40, 300); // body armour enemy 
