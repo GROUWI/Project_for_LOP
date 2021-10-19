@@ -102,89 +102,100 @@ namespace Ну_рванули
 }
 
 
+
+
 /*
-    
-// Минимальный процент попадания = 5;
-// Максимальный процент попадания = 95;
+  
+ 
+ 
 
-
-// Формула формального попадания по врагу
-    int Hitchance;
-    if (MSkill - Mdef < 0){
-        Hitchance = 5;
-    }
-    else
+    public Fight()
     {
-        Hitchance = 5 + ((MSkill - MDef) / MSkill)*90;
-    }
+        // Минимальный процент попадания = 5;
+        // Максимальный процент попадания = 95;
 
-// Шанс попадания в голову
-    int HeadHitChance = 25;    
+        int TempArmor = Armor;  // В самом начале боя
+        int TempHealth=Health;  // В самом начале боя
+        int ArmorBorder = 75;   // Граничное значение брони ниже которого начнется сниматься хп
+        int HeadHitChance = 25; // Шанс попадания в голову
 
-// Функция рандом, значения от 0 до 1
-    class rnd
-    {
-        static void Main(string[] args)
+        // Формула формального попадания по врагу
+        int Hitchance;
+        if (MSkill - Mdef < 0)
         {
-            Random rand = new Random();
-            int[] rndArray = new int[3];
-            for (int i = 0; i < 3; i++)
-            {
-                rndArray[i] = rand.NextDouble(0, 1);
-            } 
+            Hitchance = 5;
         }
-    }
-    
-// Формула подсчета урона у оружия
-    Damage = MinDamgae + rndArray[0]*(MaxDamage - MinDamage);   //Damage как чистый урон оружия без коэфов
-
-
-// Подсчет места попадания во врага (1 - попал, 0 - промазал)
-    if (HitChance < rndArray[]*100)
-    {
-        BodyHit = 1;
-        if (rndArray[1]*100) < 25
+        else
         {
-            HeadHit = 1;
+            Hitchance = 5 + ((MSkill - MDef) / MSkill) * 90;
+        }
+
+            
+
+        // Функция рандом, значения от 0 до 1
+        class rnd
+        {
+            static void Main(string[] args)
+            {
+                Random rand = new Random();
+                int[] rndArray = new int[3];
+                for (int i = 0; i < 3; i++)
+                {
+                    rndArray[i] = rand.NextDouble(0, 1);
+                } 
+            }
+        }
+    
+        // Формула подсчета урона у оружия
+        Damage = MinDamgae + rndArray[0]*(MaxDamage - MinDamage);   //Damage как чистый урон оружия без коэфов
+
+
+        // Подсчет места попадания во врага (1 - попал, 0 - промазал)
+        if (HitChance < rndArray[]*100)
+        {
+            BodyHit = 1;
+            if (rndArray[1]*100) < 25
+            {
+                HeadHit = 1;
+                BodyHit = 0;
+            }
+            else
+            {
+                HeadHit = 0;
+            }
+        }
+        else
+        {
             BodyHit = 0;
         }
-        else
-        {
-            HeadHit = 0;
-        }
-    }
-    else
-    {
-        BodyHit = 0;
-    }
 
 
-    int TempArmor = Armor; //В самом начале боя
-    int TempHealth=Health; //В самом начале боя
-    int ArmorBorder = 75; //Граничное значение брони ниже которого начнется сниматься хп
-// Формула фактического попадания по врагу с random и уроном по броне и хп
+        
+        // Формула фактического попадания по врагу с random и уроном по броне и хп
     
-    {
-    if (TempArmor >= Damage*armor_coef)
-    {
-        TempArmor = TempArmor - Damage*armor_coef;
-        if (TempArmor <= ArmorBorder) and (HeadHit = 1)
+        public Hit
         {
-            TempHealth = TempHealth - 1,5*Damage*(1 - (TempArmor / Armor Border));
-        }
+            if (TempArmor >= Damage*armor_coef)
+            {
+                TempArmor = TempArmor - Damage*armor_coef;
+        
+                if (TempArmor <= ArmorBorder) and (HeadHit = 1)
+                {
+                    TempHealth = TempHealth - 1,5*Damage*(1 - (TempArmor / Armor Border));
+                }
+                else
+                {
+                    TempHealth = TempHealth - Damage*(1 - (TempArmor / Armor Border));
+                }
+            }
         else
         {
-            TempHealth = TempHealth - Damage*(1 - (TempArmor / Armor Border));
+            TempArmor = 0;
+            if (TempArmor >= ArmorBorder)
+            {
+                TempHealth = TempHealth - Damage;
+            }
         }
-    }
-    else
-    {
-        TempArmor = 0;
-        if (TempArmor >= ArmorBorder)
-        {
-            TempHealth = TempHealth - Damage;
-        }
-    }
 
 
 
