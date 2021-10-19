@@ -88,7 +88,7 @@ namespace Ну_рванули
         }
         private void createchar_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             Form1 createchar = new Form1();
             createchar.name_v = name_v;
             createchar.Show();
