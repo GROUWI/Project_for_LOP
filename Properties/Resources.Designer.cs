@@ -63,6 +63,16 @@ namespace Ну_рванули.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16488 {
+            get {
+                object obj = ResourceManager.GetObject("16488", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ArmourSiluette {
             get {
                 object obj = ResourceManager.GetObject("ArmourSiluette", resourceCulture);

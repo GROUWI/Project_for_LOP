@@ -93,6 +93,11 @@ namespace Ну_рванули
             createchar.name_v = name_v;
             createchar.Show();
         }
+
+        private void name_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
@@ -183,4 +188,63 @@ namespace Ну_рванули
 
 
 
- */
+
+
+
+    public class Example
+    {
+        private static System.Timers.Timer aTimer;
+   
+        public static void Main()
+        {
+            SetTimer();
+
+            Console.WriteLine("Бой начался в {0:HH:mm:ss.fff}", DateTime.Now);
+            Console.ReadLine();
+            aTimer.Stop();
+            aTimer.Dispose();
+      
+        if (health <= 0)
+        {
+            DamageLogs.WriteLine("Вы проиграли. Бой закончен");
+        }
+        if (healthenemy <= 0)
+        {
+            DamageLogs.WriteLine("Вы выиграли. Бой закончен");
+        }
+
+        private static void SetTimer()
+        {
+            // Таймер на 2.5 секунды.
+            aTimer = new System.Timers.Timer(2500);
+            // Функции на таймер
+            aTimer.Elapsed += OnTimedEvent;
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
+        }
+
+    private static void OnTimedEvent(Object source, ElapsedEventArgs e)
+        {
+            Console.WriteLine("The Elapsed event was raised at {0:HH:mm:ss.fff}",
+                          e.SignalTime);
+        }
+    }  
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ *\

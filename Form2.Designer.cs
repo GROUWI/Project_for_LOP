@@ -29,56 +29,46 @@ namespace Ну_рванули
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.arena = new System.Windows.Forms.Button();
             this.createchar = new System.Windows.Forms.Button();
             this.DamageLogs = new System.Windows.Forms.ComboBox();
             this.choose = new System.Windows.Forms.Button();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.TBWeapDamageEnemy = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.TBHealthEnemy = new System.Windows.Forms.TextBox();
             this.TBHelmarmorEnemy = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.TBMDefEnemy = new System.Windows.Forms.TextBox();
             this.TBMSkillEnemy = new System.Windows.Forms.TextBox();
             this.TBBodyarmorEnemy = new System.Windows.Forms.TextBox();
-            this.pictureShieldenemy = new System.Windows.Forms.PictureBox();
-            this.pictureWeaponenemy = new System.Windows.Forms.PictureBox();
-            this.pictureArmourenemy = new System.Windows.Forms.PictureBox();
-            this.pictureHelmetenemy = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.TBWeapDamage = new System.Windows.Forms.TextBox();
-            this.pictureBoxWeapDamage = new System.Windows.Forms.PictureBox();
-            this.pictureBoxHealth = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSmallArmour = new System.Windows.Forms.PictureBox();
             this.TBHealth = new System.Windows.Forms.TextBox();
             this.TBHelmarmor = new System.Windows.Forms.TextBox();
-            this.pictureBoxSmallHelm = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMdef = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMSkill = new System.Windows.Forms.PictureBox();
             this.TBMDef = new System.Windows.Forms.TextBox();
             this.TBMSkill = new System.Windows.Forms.TextBox();
             this.TBBodyarmor = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.Label();
+            this.pictureBoxWeapDamage = new System.Windows.Forms.PictureBox();
+            this.pictureBoxHealth = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSmallArmour = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSmallHelm = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMdef = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMSkill = new System.Windows.Forms.PictureBox();
             this.pictureShield = new System.Windows.Forms.PictureBox();
             this.pictureWeapon = new System.Windows.Forms.PictureBox();
             this.pictureArmour = new System.Windows.Forms.PictureBox();
             this.pictureHelmet = new System.Windows.Forms.PictureBox();
-            this.name = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureShieldenemy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureWeaponenemy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureArmourenemy)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureHelmetenemy)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureShieldenemy = new System.Windows.Forms.PictureBox();
+            this.pictureWeaponenemy = new System.Windows.Forms.PictureBox();
+            this.pictureArmourenemy = new System.Windows.Forms.PictureBox();
+            this.pictureHelmetenemy = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapDamage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallArmour)).BeginInit();
@@ -89,6 +79,17 @@ namespace Ну_рванули
             ((System.ComponentModel.ISupportInitialize)(this.pictureWeapon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureArmour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHelmet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureShieldenemy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureWeaponenemy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureArmourenemy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHelmetenemy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // arena
@@ -118,7 +119,7 @@ namespace Ну_рванули
             // DamageLogs
             // 
             this.DamageLogs.FormattingEnabled = true;
-            this.DamageLogs.Location = new System.Drawing.Point(335, 116);
+            this.DamageLogs.Location = new System.Drawing.Point(335, 54);
             this.DamageLogs.Name = "DamageLogs";
             this.DamageLogs.Size = new System.Drawing.Size(194, 21);
             this.DamageLogs.TabIndex = 122;
@@ -136,16 +137,6 @@ namespace Ну_рванули
             this.choose.UseVisualStyleBackColor = true;
             this.choose.Click += new System.EventHandler(this.choose_Click_1);
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox11.Location = new System.Drawing.Point(374, 224);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(104, 83);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 124;
-            this.pictureBox11.TabStop = false;
-            // 
             // TBWeapDamageEnemy
             // 
             this.TBWeapDamageEnemy.BackColor = System.Drawing.Color.Crimson;
@@ -158,36 +149,6 @@ namespace Ну_рванули
             this.TBWeapDamageEnemy.ReadOnly = true;
             this.TBWeapDamageEnemy.Size = new System.Drawing.Size(87, 39);
             this.TBWeapDamageEnemy.TabIndex = 181;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(694, 466);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 180;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(547, 466);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 179;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(547, 425);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 178;
-            this.pictureBox3.TabStop = false;
             // 
             // TBHealthEnemy
             // 
@@ -214,36 +175,6 @@ namespace Ну_рванули
             this.TBHelmarmorEnemy.ReadOnly = true;
             this.TBHelmarmorEnemy.Size = new System.Drawing.Size(89, 39);
             this.TBHelmarmorEnemy.TabIndex = 176;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(547, 380);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 175;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(694, 425);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 35);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 174;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(694, 380);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 173;
-            this.pictureBox6.TabStop = false;
             // 
             // TBMDefEnemy
             // 
@@ -284,51 +215,6 @@ namespace Ну_рванули
             this.TBBodyarmorEnemy.Size = new System.Drawing.Size(89, 35);
             this.TBBodyarmorEnemy.TabIndex = 170;
             // 
-            // pictureShieldenemy
-            // 
-            this.pictureShieldenemy.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureShieldenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureShieldenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
-            this.pictureShieldenemy.Location = new System.Drawing.Point(741, 224);
-            this.pictureShieldenemy.Name = "pictureShieldenemy";
-            this.pictureShieldenemy.Size = new System.Drawing.Size(100, 150);
-            this.pictureShieldenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureShieldenemy.TabIndex = 165;
-            this.pictureShieldenemy.TabStop = false;
-            // 
-            // pictureWeaponenemy
-            // 
-            this.pictureWeaponenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureWeaponenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
-            this.pictureWeaponenemy.Location = new System.Drawing.Point(529, 224);
-            this.pictureWeaponenemy.Name = "pictureWeaponenemy";
-            this.pictureWeaponenemy.Size = new System.Drawing.Size(100, 150);
-            this.pictureWeaponenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureWeaponenemy.TabIndex = 164;
-            this.pictureWeaponenemy.TabStop = false;
-            // 
-            // pictureArmourenemy
-            // 
-            this.pictureArmourenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureArmourenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
-            this.pictureArmourenemy.Location = new System.Drawing.Point(635, 224);
-            this.pictureArmourenemy.Name = "pictureArmourenemy";
-            this.pictureArmourenemy.Size = new System.Drawing.Size(100, 150);
-            this.pictureArmourenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureArmourenemy.TabIndex = 163;
-            this.pictureArmourenemy.TabStop = false;
-            // 
-            // pictureHelmetenemy
-            // 
-            this.pictureHelmetenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureHelmetenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
-            this.pictureHelmetenemy.Location = new System.Drawing.Point(635, 127);
-            this.pictureHelmetenemy.Name = "pictureHelmetenemy";
-            this.pictureHelmetenemy.Size = new System.Drawing.Size(100, 91);
-            this.pictureHelmetenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureHelmetenemy.TabIndex = 162;
-            this.pictureHelmetenemy.TabStop = false;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Segoe Script", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -351,36 +237,6 @@ namespace Ну_рванули
             this.TBWeapDamage.ReadOnly = true;
             this.TBWeapDamage.Size = new System.Drawing.Size(87, 39);
             this.TBWeapDamage.TabIndex = 201;
-            // 
-            // pictureBoxWeapDamage
-            // 
-            this.pictureBoxWeapDamage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxWeapDamage.Location = new System.Drawing.Point(182, 466);
-            this.pictureBoxWeapDamage.Name = "pictureBoxWeapDamage";
-            this.pictureBoxWeapDamage.Size = new System.Drawing.Size(40, 39);
-            this.pictureBoxWeapDamage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxWeapDamage.TabIndex = 200;
-            this.pictureBoxWeapDamage.TabStop = false;
-            // 
-            // pictureBoxHealth
-            // 
-            this.pictureBoxHealth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxHealth.Location = new System.Drawing.Point(35, 466);
-            this.pictureBoxHealth.Name = "pictureBoxHealth";
-            this.pictureBoxHealth.Size = new System.Drawing.Size(39, 39);
-            this.pictureBoxHealth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxHealth.TabIndex = 199;
-            this.pictureBoxHealth.TabStop = false;
-            // 
-            // pictureBoxSmallArmour
-            // 
-            this.pictureBoxSmallArmour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxSmallArmour.Location = new System.Drawing.Point(35, 425);
-            this.pictureBoxSmallArmour.Name = "pictureBoxSmallArmour";
-            this.pictureBoxSmallArmour.Size = new System.Drawing.Size(39, 35);
-            this.pictureBoxSmallArmour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxSmallArmour.TabIndex = 198;
-            this.pictureBoxSmallArmour.TabStop = false;
             // 
             // TBHealth
             // 
@@ -407,37 +263,6 @@ namespace Ну_рванули
             this.TBHelmarmor.ReadOnly = true;
             this.TBHelmarmor.Size = new System.Drawing.Size(89, 39);
             this.TBHelmarmor.TabIndex = 196;
-            // 
-            // pictureBoxSmallHelm
-            // 
-            this.pictureBoxSmallHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxSmallHelm.Location = new System.Drawing.Point(35, 380);
-            this.pictureBoxSmallHelm.Name = "pictureBoxSmallHelm";
-            this.pictureBoxSmallHelm.Size = new System.Drawing.Size(39, 39);
-            this.pictureBoxSmallHelm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSmallHelm.TabIndex = 195;
-            this.pictureBoxSmallHelm.TabStop = false;
-            
-            // 
-            // pictureBoxMdef
-            // 
-            this.pictureBoxMdef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMdef.Location = new System.Drawing.Point(182, 425);
-            this.pictureBoxMdef.Name = "pictureBoxMdef";
-            this.pictureBoxMdef.Size = new System.Drawing.Size(39, 35);
-            this.pictureBoxMdef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxMdef.TabIndex = 194;
-            this.pictureBoxMdef.TabStop = false;
-            // 
-            // pictureBoxMSkill
-            // 
-            this.pictureBoxMSkill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMSkill.Location = new System.Drawing.Point(182, 380);
-            this.pictureBoxMSkill.Name = "pictureBoxMSkill";
-            this.pictureBoxMSkill.Size = new System.Drawing.Size(39, 39);
-            this.pictureBoxMSkill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMSkill.TabIndex = 193;
-            this.pictureBoxMSkill.TabStop = false;
             // 
             // TBMDef
             // 
@@ -477,6 +302,84 @@ namespace Ну_рванули
             this.TBBodyarmor.ReadOnly = true;
             this.TBBodyarmor.Size = new System.Drawing.Size(89, 35);
             this.TBBodyarmor.TabIndex = 190;
+            // 
+            // name
+            // 
+            this.name.AutoSize = true;
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(12, 70);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(76, 33);
+            this.name.TabIndex = 90;
+            this.name.Text = "Имя";
+            this.name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.name.Click += new System.EventHandler(this.name_Click);
+            // 
+            // pictureBoxWeapDamage
+            // 
+            this.pictureBoxWeapDamage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxWeapDamage.BackgroundImage")));
+            this.pictureBoxWeapDamage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxWeapDamage.Location = new System.Drawing.Point(182, 466);
+            this.pictureBoxWeapDamage.Name = "pictureBoxWeapDamage";
+            this.pictureBoxWeapDamage.Size = new System.Drawing.Size(40, 39);
+            this.pictureBoxWeapDamage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxWeapDamage.TabIndex = 200;
+            this.pictureBoxWeapDamage.TabStop = false;
+            // 
+            // pictureBoxHealth
+            // 
+            this.pictureBoxHealth.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHealth.BackgroundImage")));
+            this.pictureBoxHealth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxHealth.Location = new System.Drawing.Point(35, 466);
+            this.pictureBoxHealth.Name = "pictureBoxHealth";
+            this.pictureBoxHealth.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxHealth.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxHealth.TabIndex = 199;
+            this.pictureBoxHealth.TabStop = false;
+            // 
+            // pictureBoxSmallArmour
+            // 
+            this.pictureBoxSmallArmour.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSmallArmour.BackgroundImage")));
+            this.pictureBoxSmallArmour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxSmallArmour.Location = new System.Drawing.Point(35, 425);
+            this.pictureBoxSmallArmour.Name = "pictureBoxSmallArmour";
+            this.pictureBoxSmallArmour.Size = new System.Drawing.Size(39, 35);
+            this.pictureBoxSmallArmour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSmallArmour.TabIndex = 198;
+            this.pictureBoxSmallArmour.TabStop = false;
+            // 
+            // pictureBoxSmallHelm
+            // 
+            this.pictureBoxSmallHelm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSmallHelm.BackgroundImage")));
+            this.pictureBoxSmallHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxSmallHelm.Location = new System.Drawing.Point(35, 380);
+            this.pictureBoxSmallHelm.Name = "pictureBoxSmallHelm";
+            this.pictureBoxSmallHelm.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxSmallHelm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSmallHelm.TabIndex = 195;
+            this.pictureBoxSmallHelm.TabStop = false;
+            // 
+            // pictureBoxMdef
+            // 
+            this.pictureBoxMdef.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxMdef.BackgroundImage")));
+            this.pictureBoxMdef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxMdef.Location = new System.Drawing.Point(182, 425);
+            this.pictureBoxMdef.Name = "pictureBoxMdef";
+            this.pictureBoxMdef.Size = new System.Drawing.Size(39, 35);
+            this.pictureBoxMdef.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMdef.TabIndex = 194;
+            this.pictureBoxMdef.TabStop = false;
+            // 
+            // pictureBoxMSkill
+            // 
+            this.pictureBoxMSkill.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxMSkill.BackgroundImage")));
+            this.pictureBoxMSkill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxMSkill.Location = new System.Drawing.Point(182, 380);
+            this.pictureBoxMSkill.Name = "pictureBoxMSkill";
+            this.pictureBoxMSkill.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxMSkill.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMSkill.TabIndex = 193;
+            this.pictureBoxMSkill.TabStop = false;
             // 
             // pictureShield
             // 
@@ -523,17 +426,127 @@ namespace Ну_рванули
             this.pictureHelmet.TabIndex = 182;
             this.pictureHelmet.TabStop = false;
             // 
-            // name
+            // pictureBox1
             // 
-            this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Showcard Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.Location = new System.Drawing.Point(12, 70);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(79, 36);
-            this.name.TabIndex = 90;
-            this.name.Text = "Имя";
-            this.name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(694, 466);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 180;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(547, 466);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 179;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(547, 425);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(39, 35);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 178;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(547, 380);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 175;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(694, 425);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(39, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 174;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(694, 380);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(39, 39);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 173;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureShieldenemy
+            // 
+            this.pictureShieldenemy.BackColor = System.Drawing.Color.Gainsboro;
+            this.pictureShieldenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureShieldenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
+            this.pictureShieldenemy.Location = new System.Drawing.Point(741, 224);
+            this.pictureShieldenemy.Name = "pictureShieldenemy";
+            this.pictureShieldenemy.Size = new System.Drawing.Size(100, 150);
+            this.pictureShieldenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureShieldenemy.TabIndex = 165;
+            this.pictureShieldenemy.TabStop = false;
+            // 
+            // pictureWeaponenemy
+            // 
+            this.pictureWeaponenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureWeaponenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
+            this.pictureWeaponenemy.Location = new System.Drawing.Point(529, 224);
+            this.pictureWeaponenemy.Name = "pictureWeaponenemy";
+            this.pictureWeaponenemy.Size = new System.Drawing.Size(100, 150);
+            this.pictureWeaponenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureWeaponenemy.TabIndex = 164;
+            this.pictureWeaponenemy.TabStop = false;
+            // 
+            // pictureArmourenemy
+            // 
+            this.pictureArmourenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureArmourenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
+            this.pictureArmourenemy.Location = new System.Drawing.Point(635, 224);
+            this.pictureArmourenemy.Name = "pictureArmourenemy";
+            this.pictureArmourenemy.Size = new System.Drawing.Size(100, 150);
+            this.pictureArmourenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureArmourenemy.TabIndex = 163;
+            this.pictureArmourenemy.TabStop = false;
+            // 
+            // pictureHelmetenemy
+            // 
+            this.pictureHelmetenemy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureHelmetenemy.Image = global::Ну_рванули.Properties.Resources.Grey;
+            this.pictureHelmetenemy.Location = new System.Drawing.Point(635, 127);
+            this.pictureHelmetenemy.Name = "pictureHelmetenemy";
+            this.pictureHelmetenemy.Size = new System.Drawing.Size(100, 91);
+            this.pictureHelmetenemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureHelmetenemy.TabIndex = 162;
+            this.pictureHelmetenemy.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackgroundImage = global::Ну_рванули.Properties.Resources.Скрещеные_мечи;
+            this.pictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox11.Location = new System.Drawing.Point(352, 237);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(157, 119);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 124;
+            this.pictureBox11.TabStop = false;
             // 
             // Form2
             // 
@@ -583,17 +596,6 @@ namespace Ну_рванули
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureShieldenemy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureWeaponenemy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureArmourenemy)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureHelmetenemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapDamage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallArmour)).EndInit();
@@ -604,6 +606,17 @@ namespace Ну_рванули
             ((System.ComponentModel.ISupportInitialize)(this.pictureWeapon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureArmour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureHelmet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureShieldenemy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureWeaponenemy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureArmourenemy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureHelmetenemy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
