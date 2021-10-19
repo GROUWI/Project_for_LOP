@@ -6,57 +6,49 @@ using System.Threading.Tasks;
 
 namespace Ну_рванули
 {
-    class Helmet
+    /* записываем в класс Item общие параметры остальных классов */
+    /* НАСЛЕДОВАНИЕ */
+    class Item
     {
-        public string h_name { get; set; }
-        public int h_armor { get; set; }
-
-        public Helmet(string name, int armor) { h_name = name; h_armor = armor; } // конструктор
-        private string h_image;
-        public void setHelmetImage(string filename) { h_image = filename; }
-        public string getHelmetImage() { return h_image; }  
+        public string Name { get; set; }
+        public int Armor { get; set; }
+        private string Image;
+        public void setItemImage(string filename) { Image = filename; }
+        public string getItemImage() { return Image; }
     }
-    class Armour
+    class Helmet : Item
     {
-        public string b_name { get; set; }
-        public int b_armor { get; set; }
-
-        public Armour(string name, int armor) { b_name = name; b_armor = armor; } // конструктор
-        private string b_image;
-        public void setArmourImage(string filename) { b_image = filename; }
-        public string getArmourImage() { return b_image; }
+        public Helmet(string name, int armor) { Name = name; Armor = armor; } // конструктор шлема
     }
-    class Weapon
+    class Armour : Item
+    { 
+        public Armour(string name, int armor) { Name = name; Armor = armor; } // конструктор брони
+    }
+    class Weapon : Item
     {
-        public string w_name { get; set; }
         public int min_damage { get; set; }
-        public string defis = "--";
         public int max_damage { get; set; }
         public double armor_coef { get; set; }
         public double HHitChance { get; set; }
-        private string w_image;
-        public Weapon(string name, int min, int max, double coef, double headChance) { w_name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance; }
-        public void setWeaponImage(string filename) { w_image = filename; }
-        public string getWeaponImage() { return w_image; }
+        public Weapon(string name, int min, int max, double coef, double headChance) { Name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance; } 
     }
-    class DoubleWeapon : Weapon
+    
+    class TwoWeapon : Weapon
+    { 
+        /* наследование конструктора из Weapon */
+        public TwoWeapon(string name, int min, int max, double coef, double headChance) : base(name, min, max, coef, headChance)
+        { Name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance;  }
+    }
+    class Shield : Item
     {
-        public string dw_name { get; set; }
-        public DoubleWeapon(string name, int min, int max, double coef, double headChance) { dw_name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance;  }
+        public int m_def { get; set; }
+        public Shield(string name, int mdef) { Name = name; m_def = mdef; }
     }
-    class Shield
-    {
-        private int m_def;
-
-        private string s_image;
-        public void setShieldImage(string filename) { s_image = filename; }
-        public string getShieldImage() { return s_image; }
-    }
-    class Character
-    {
-        private int m_skill;
-        private int m_def;
-        private int hp;
-    }
+    //class Character
+    //{
+    //    private int m_skill;
+    //    private int m_def;
+    //    private int hp;
+    //}
 }
 

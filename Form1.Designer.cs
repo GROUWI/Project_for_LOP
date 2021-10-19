@@ -29,11 +29,10 @@ namespace Ну_рванули
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.comboBoxHelmet = new System.Windows.Forms.ComboBox();
-            this.comboBoxWeapon = new System.Windows.Forms.ComboBox();
-            this.comboBoxArmour = new System.Windows.Forms.ComboBox();
-            this.comboBoxShield = new System.Windows.Forms.ComboBox();
+            this.chooseHelmet = new System.Windows.Forms.ComboBox();
+            this.chooseWeapon = new System.Windows.Forms.ComboBox();
+            this.chooseArmour = new System.Windows.Forms.ComboBox();
+            this.chooseShield = new System.Windows.Forms.ComboBox();
             this.TBBodyarmor = new System.Windows.Forms.TextBox();
             this.TBMSkill = new System.Windows.Forms.TextBox();
             this.TBMDef = new System.Windows.Forms.TextBox();
@@ -41,11 +40,9 @@ namespace Ну_рванули
             this.TBHealth = new System.Windows.Forms.TextBox();
             this.TBWeapDamage = new System.Windows.Forms.TextBox();
             this.createchar = new System.Windows.Forms.Button();
-            this.arena = new System.Windows.Forms.Button();
+            this.arenabutt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.confirmedbutt = new System.Windows.Forms.Button();
             this.pictureBoxWeapDamage = new System.Windows.Forms.PictureBox();
             this.pictureBoxHealth = new System.Windows.Forms.PictureBox();
@@ -69,54 +66,54 @@ namespace Ну_рванули
             ((System.ComponentModel.ISupportInitialize)(this.pictureHelmet)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBoxHelmet
+            // chooseHelmet
             // 
-            this.comboBoxHelmet.BackColor = System.Drawing.Color.White;
-            this.comboBoxHelmet.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxHelmet.DisplayMember = "1";
-            this.comboBoxHelmet.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBoxHelmet.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxHelmet.FormattingEnabled = true;
-            this.comboBoxHelmet.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.comboBoxHelmet.Location = new System.Drawing.Point(148, 193);
-            this.comboBoxHelmet.Name = "comboBoxHelmet";
-            this.comboBoxHelmet.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBoxHelmet.Size = new System.Drawing.Size(132, 27);
-            this.comboBoxHelmet.TabIndex = 4;
-            this.comboBoxHelmet.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmet_SelectedIndexChanged);
+            this.chooseHelmet.BackColor = System.Drawing.Color.White;
+            this.chooseHelmet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chooseHelmet.DisplayMember = "1";
+            this.chooseHelmet.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.chooseHelmet.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseHelmet.FormattingEnabled = true;
+            this.chooseHelmet.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.chooseHelmet.Location = new System.Drawing.Point(148, 193);
+            this.chooseHelmet.Name = "chooseHelmet";
+            this.chooseHelmet.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.chooseHelmet.Size = new System.Drawing.Size(132, 27);
+            this.chooseHelmet.TabIndex = 4;
+            this.chooseHelmet.SelectedIndexChanged += new System.EventHandler(this.comboBoxHelmet_SelectedIndexChanged);
             // 
-            // comboBoxWeapon
+            // chooseWeapon
             // 
-            this.comboBoxWeapon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxWeapon.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxWeapon.FormattingEnabled = true;
-            this.comboBoxWeapon.Location = new System.Drawing.Point(0, 385);
-            this.comboBoxWeapon.Name = "comboBoxWeapon";
-            this.comboBoxWeapon.Size = new System.Drawing.Size(132, 27);
-            this.comboBoxWeapon.TabIndex = 5;
-            this.comboBoxWeapon.SelectedIndexChanged += new System.EventHandler(this.comboBoxWeapon_SelectedIndexChanged);
+            this.chooseWeapon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chooseWeapon.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseWeapon.FormattingEnabled = true;
+            this.chooseWeapon.Location = new System.Drawing.Point(0, 385);
+            this.chooseWeapon.Name = "chooseWeapon";
+            this.chooseWeapon.Size = new System.Drawing.Size(132, 27);
+            this.chooseWeapon.TabIndex = 5;
+            this.chooseWeapon.SelectedIndexChanged += new System.EventHandler(this.comboBoxWeapon_SelectedIndexChanged);
             // 
-            // comboBoxArmour
+            // chooseArmour
             // 
-            this.comboBoxArmour.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxArmour.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxArmour.FormattingEnabled = true;
-            this.comboBoxArmour.Location = new System.Drawing.Point(148, 385);
-            this.comboBoxArmour.Name = "comboBoxArmour";
-            this.comboBoxArmour.Size = new System.Drawing.Size(132, 27);
-            this.comboBoxArmour.TabIndex = 6;
-            this.comboBoxArmour.SelectedIndexChanged += new System.EventHandler(this.comboBoxArmour_SelectedIndexChanged);
+            this.chooseArmour.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chooseArmour.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseArmour.FormattingEnabled = true;
+            this.chooseArmour.Location = new System.Drawing.Point(148, 385);
+            this.chooseArmour.Name = "chooseArmour";
+            this.chooseArmour.Size = new System.Drawing.Size(132, 27);
+            this.chooseArmour.TabIndex = 6;
+            this.chooseArmour.SelectedIndexChanged += new System.EventHandler(this.comboBoxArmour_SelectedIndexChanged);
             // 
-            // comboBoxShield
+            // chooseShield
             // 
-            this.comboBoxShield.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxShield.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxShield.FormattingEnabled = true;
-            this.comboBoxShield.Location = new System.Drawing.Point(296, 385);
-            this.comboBoxShield.Name = "comboBoxShield";
-            this.comboBoxShield.Size = new System.Drawing.Size(132, 27);
-            this.comboBoxShield.TabIndex = 7;
-            this.comboBoxShield.SelectedIndexChanged += new System.EventHandler(this.comboBoxShield_SelectedIndexChanged);
+            this.chooseShield.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.chooseShield.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chooseShield.FormattingEnabled = true;
+            this.chooseShield.Location = new System.Drawing.Point(296, 385);
+            this.chooseShield.Name = "chooseShield";
+            this.chooseShield.Size = new System.Drawing.Size(132, 27);
+            this.chooseShield.TabIndex = 7;
+            this.chooseShield.SelectedIndexChanged += new System.EventHandler(this.comboBoxShield_SelectedIndexChanged);
             // 
             // TBBodyarmor
             // 
@@ -208,50 +205,36 @@ namespace Ну_рванули
             this.createchar.Text = "Создание Персонажа";
             this.createchar.UseVisualStyleBackColor = false;
             // 
-            // arena
+            // arenabutt
             // 
-            this.arena.BackColor = System.Drawing.Color.Transparent;
-            this.arena.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.arena.Location = new System.Drawing.Point(148, 12);
-            this.arena.Name = "arena";
-            this.arena.Size = new System.Drawing.Size(75, 26);
-            this.arena.TabIndex = 21;
-            this.arena.Text = "Арена";
-            this.arena.UseVisualStyleBackColor = false;
-            this.arena.Click += new System.EventHandler(this.arena_Click);
+            this.arenabutt.BackColor = System.Drawing.Color.Transparent;
+            this.arenabutt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.arenabutt.Location = new System.Drawing.Point(148, 12);
+            this.arenabutt.Name = "arenabutt";
+            this.arenabutt.Size = new System.Drawing.Size(75, 26);
+            this.arenabutt.TabIndex = 21;
+            this.arenabutt.Text = "Арена";
+            this.arenabutt.UseVisualStyleBackColor = false;
+            this.arenabutt.Click += new System.EventHandler(this.arena_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 47);
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(22, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.Size = new System.Drawing.Size(161, 27);
             this.label1.TabIndex = 22;
             this.label1.Text = "Имя персонажа:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Прозвище:";
-            // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(120, 44);
+            this.name.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(189, 54);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(167, 20);
+            this.name.Size = new System.Drawing.Size(167, 27);
             this.name.TabIndex = 24;
             this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(120, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 25;
             // 
             // confirmedbutt
             // 
@@ -268,7 +251,6 @@ namespace Ну_рванули
             // pictureBoxWeapDamage
             // 
             this.pictureBoxWeapDamage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxWeapDamage.Image = global::Ну_рванули.Properties.Resources.SwordHitHeart111;
             this.pictureBoxWeapDamage.Location = new System.Drawing.Point(222, 507);
             this.pictureBoxWeapDamage.Name = "pictureBoxWeapDamage";
             this.pictureBoxWeapDamage.Size = new System.Drawing.Size(40, 39);
@@ -279,7 +261,6 @@ namespace Ну_рванули
             // pictureBoxHealth
             // 
             this.pictureBoxHealth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxHealth.Image = global::Ну_рванули.Properties.Resources.HP;
             this.pictureBoxHealth.Location = new System.Drawing.Point(75, 507);
             this.pictureBoxHealth.Name = "pictureBoxHealth";
             this.pictureBoxHealth.Size = new System.Drawing.Size(39, 39);
@@ -290,7 +271,6 @@ namespace Ну_рванули
             // pictureBoxSmallArmour
             // 
             this.pictureBoxSmallArmour.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxSmallArmour.Image = global::Ну_рванули.Properties.Resources.Screenshot_1;
             this.pictureBoxSmallArmour.Location = new System.Drawing.Point(75, 466);
             this.pictureBoxSmallArmour.Name = "pictureBoxSmallArmour";
             this.pictureBoxSmallArmour.Size = new System.Drawing.Size(39, 35);
@@ -301,7 +281,6 @@ namespace Ну_рванули
             // pictureBoxSmallHelm
             // 
             this.pictureBoxSmallHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxSmallHelm.Image = global::Ну_рванули.Properties.Resources.HelmetSiluette1;
             this.pictureBoxSmallHelm.Location = new System.Drawing.Point(75, 421);
             this.pictureBoxSmallHelm.Name = "pictureBoxSmallHelm";
             this.pictureBoxSmallHelm.Size = new System.Drawing.Size(39, 39);
@@ -312,7 +291,6 @@ namespace Ну_рванули
             // pictureBoxMdef
             // 
             this.pictureBoxMdef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMdef.Image = global::Ну_рванули.Properties.Resources.ShieldSiluette;
             this.pictureBoxMdef.Location = new System.Drawing.Point(222, 466);
             this.pictureBoxMdef.Name = "pictureBoxMdef";
             this.pictureBoxMdef.Size = new System.Drawing.Size(39, 35);
@@ -323,7 +301,6 @@ namespace Ну_рванули
             // pictureBoxMSkill
             // 
             this.pictureBoxMSkill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxMSkill.Image = global::Ну_рванули.Properties.Resources.png_transparent_sword_computer_icons_ice_axe_angle_black_desktop_wallpaper2;
             this.pictureBoxMSkill.Location = new System.Drawing.Point(222, 421);
             this.pictureBoxMSkill.Name = "pictureBoxMSkill";
             this.pictureBoxMSkill.Size = new System.Drawing.Size(39, 39);
@@ -334,8 +311,8 @@ namespace Ну_рванули
             // pictureShield
             // 
             this.pictureShield.BackColor = System.Drawing.Color.Gainsboro;
-            this.pictureShield.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureShield.BackgroundImage")));
             this.pictureShield.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureShield.Image = global::Ну_рванули.Properties.Resources.Grey;
             this.pictureShield.Location = new System.Drawing.Point(317, 229);
             this.pictureShield.Name = "pictureShield";
             this.pictureShield.Size = new System.Drawing.Size(100, 150);
@@ -383,11 +360,9 @@ namespace Ну_рванули
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(440, 633);
             this.Controls.Add(this.confirmedbutt);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.name);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.arena);
+            this.Controls.Add(this.arenabutt);
             this.Controls.Add(this.createchar);
             this.Controls.Add(this.TBWeapDamage);
             this.Controls.Add(this.pictureBoxWeapDamage);
@@ -401,10 +376,10 @@ namespace Ну_рванули
             this.Controls.Add(this.TBMDef);
             this.Controls.Add(this.TBMSkill);
             this.Controls.Add(this.TBBodyarmor);
-            this.Controls.Add(this.comboBoxShield);
-            this.Controls.Add(this.comboBoxArmour);
-            this.Controls.Add(this.comboBoxWeapon);
-            this.Controls.Add(this.comboBoxHelmet);
+            this.Controls.Add(this.chooseShield);
+            this.Controls.Add(this.chooseArmour);
+            this.Controls.Add(this.chooseWeapon);
+            this.Controls.Add(this.chooseHelmet);
             this.Controls.Add(this.pictureShield);
             this.Controls.Add(this.pictureWeapon);
             this.Controls.Add(this.pictureArmour);
@@ -433,10 +408,10 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureArmour;
         private System.Windows.Forms.PictureBox pictureWeapon;
         private System.Windows.Forms.PictureBox pictureShield;
-        private System.Windows.Forms.ComboBox comboBoxHelmet;
-        private System.Windows.Forms.ComboBox comboBoxWeapon;
-        private System.Windows.Forms.ComboBox comboBoxArmour;
-        private System.Windows.Forms.ComboBox comboBoxShield;
+        private System.Windows.Forms.ComboBox chooseHelmet;
+        private System.Windows.Forms.ComboBox chooseWeapon;
+        private System.Windows.Forms.ComboBox chooseArmour;
+        private System.Windows.Forms.ComboBox chooseShield;
         private System.Windows.Forms.TextBox TBBodyarmor;
         private System.Windows.Forms.TextBox TBMSkill;
         private System.Windows.Forms.TextBox TBMDef;
@@ -450,11 +425,9 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureBoxWeapDamage;
         private System.Windows.Forms.TextBox TBWeapDamage;
         private System.Windows.Forms.Button createchar;
-        private System.Windows.Forms.Button arena;
+        private System.Windows.Forms.Button arenabutt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox name;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button confirmedbutt;
     }
 }

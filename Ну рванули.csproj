@@ -34,7 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,18 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SwordSiluette.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="HelmetSiluette.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ArmourSiluette.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ShieldSiluette.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Helmets\h1.png" />

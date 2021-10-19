@@ -13,12 +13,29 @@ namespace Ну_рванули
 {
     public partial class Form2 : Form
     {
+        public string ImageItemEnemy(int N, string directoryPath)
+        {
+
+            Random randomImage = new Random();
+            string[] ways = new string[N];
+            int i = 1;
+            var pngshelm = Directory.EnumerateFiles(directoryPath, "*.png");
+            foreach (var png in pngshelm)
+            {
+                ways[i - 1] = png;
+                i++;
+            }
+            return ways[randomImage.Next(1, N)];
+
+        }
         public int tempHP;
         public string strtempHP;
-        /* переменная для обмена данными между Form1 и Form2 */
-        public string helm_armor;
-        public string helm_image;
-        public int inthelm_armor;
+        /* переменные для обмена данными между Form1 и Form2 */
+        public string[] text = new string[6];
+        public int[] value = new int[7];
+        public int[] valueEnemy = new int[7];
+        public string[] image_form2 = new string[4];
+        public string name_v;
         public Form2()
         {
             InitializeComponent();
@@ -27,50 +44,55 @@ namespace Ну_рванули
         private void Form2_Load(object sender, EventArgs e)
         {
             /* переносим все показатели на арену */
-            TBHelmarmor.Text = helm_armor;
-
+            TBHelmarmor.Text = text[0];
+            TBBodyarmor.Text = text[1];
+            TBHealth.Text = text[2];
+            TBMSkill.Text = text[3];
+            TBMDef.Text = text[4];
+            TBWeapDamage.Text = text[5];
             /* переносим фото */
-            pictureHelmet.Image = Image.FromFile(helm_image);
+            arena.Enabled = false;
+            name.Text = name_v;
+            // не работает
+            pictureHelmet.Image = Image.FromFile(image_form2[0]);
+            pictureArmour.Image = Image.FromFile(image_form2[1]);
+            pictureWeapon.Image = Image.FromFile(image_form2[2]);
+            pictureShield.Image = Image.FromFile(image_form2[3]);
+
+
         }
         private void choose_Click_1(object sender, EventArgs e)
         {
-            /* рандомайзер для картинок шлема */
-            Random h_armorenemy = new Random();
-            string[] ways = new string[16];
-            int i = 1;
-            string directoryPath = @"E:\Для VS\Ну рванули 1.3\Helmets";
-            var pngshelm = Directory.EnumerateFiles(directoryPath, "*.png");
-            foreach (var png in pngshelm)
-            {
-                ways[i-1] = png;
-                i++;
-            }
-            pictureHelmetenemy.Image = Image.FromFile(ways[h_armorenemy.Next(1, 16)]);
+            /* рандомайзер для картинок амуниции */
+            pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
+            pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
+            pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
+            pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
+            /* задаем параметры противника */
+            Random ItemEnemy = new Random();
+            valueEnemy[0] = ItemEnemy.Next(30, 250); // helm  armour enemy
+            valueEnemy[1] = ItemEnemy.Next(40, 300); // body armour enemy 
+            valueEnemy[2] = 100;    // health enemy
+            valueEnemy[3] = ItemEnemy.Next(30, 100); // melle skill enemy
+            valueEnemy[4] = ItemEnemy.Next(40, 70); // melle def enemy
+            valueEnemy[5] = ItemEnemy.Next(10, 80);// min damage enemy
+            valueEnemy[6] = ItemEnemy.Next(30, 110);// max damage enemy
+            /* выводим их на экран */
+            TBHelmarmorEnemy.Text = valueEnemy[0].ToString();
+            TBBodyarmorEnemy.Text = valueEnemy[1].ToString();
+            TBHealthEnemy.Text = valueEnemy[2].ToString() + "/100";
+            TBMSkillEnemy.Text = valueEnemy[3].ToString();
+            TBMDefEnemy.Text = valueEnemy[4].ToString();
+            TBWeapDamageEnemy.Text = valueEnemy[5].ToString() + "--" + valueEnemy[6].ToString();
 
-
-            TBHelmarmorenemy.Text = h_armorenemy.Next(30, 250).ToString();
-            Random b_armorenemy = new Random();
-            TBBodyarmorenemy.Text = b_armorenemy.Next(35, 300).ToString();
-            Random mskill = new Random();
-            TBMSkillenemy.Text = mskill.Next(30, 100).ToString();
-            Random mdef = new Random();
-            TBMDefenemy.Text = mdef.Next(0, 70).ToString();
-            strtempHP = "100";
-            TBHealthenemy.Text = strtempHP + "/100";
-            //Weapon(tempMin, tempMax)
-            //TBWeapDamage.Text = strtempHP + "/100";
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void createchar_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form1 createchar = new Form1();
+            createchar.name_v = name_v;
+            createchar.Show();
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
 
