@@ -12,7 +12,7 @@ namespace Ну_рванули
 {
 	public partial class Form1 : Form
 	{
-		 
+		public string name_v;
 		public Form1()
 		{
 			InitializeComponent();
@@ -174,15 +174,18 @@ namespace Ну_рванули
 				
 		}
 		private void Form1_Load(object sender, EventArgs e)
-		{   /* выводим информацию о броне первого шлема */
+		{   /* выводим начальную информацию о персонаже */
 			TBHelmarmor.Text = chooseHelmet.SelectedValue.ToString();
-
 			TBBodyarmor.Text = chooseArmour.SelectedValue.ToString();
+			TBHealth.Text = "100/100";
+			TBMSkill.Text = "0";
+			TBMDef.Text = chooseShield.SelectedValue.ToString();
 			TBWeapDamage.Text = chooseWeapon.SelectedValue.ToString() +
 			"--" + "10";
-			TBMDef.Text = chooseShield.SelectedValue.ToString();
-			TBHealth.Text = "100/100";
 
+
+
+			name.Text = name_v;
 			confirmedbutt.Enabled = false;
 			createchar.Enabled = false;
 			arenabutt.Enabled = false;
@@ -216,13 +219,14 @@ namespace Ну_рванули
 		{
 			string mindamage = chooseWeapon.SelectedValue.ToString();
 			Weapon chosen = (Weapon)chooseWeapon.SelectedItem;
-			
 			/* формируем нормальную запись дамага вытягивая max damage*/
 			TBWeapDamage.Text = mindamage + "--" + chosen.max_damage.ToString();
 			pictureWeapon.Image = Image.FromFile(chosen.getItemImage());
+			//if (chosen != (TwoWeapon)chooseWeapon.SelectedItem)
+   //         {
 
-			// не знаю как разделить оружие на двойное и одиночное
-			//if (chosen != (Weapon)comboBoxWeapon.SelectedItem)
+   //         }
+			
    //         {
 			//	comboBoxShield.Enabled = false;
 			//}
@@ -240,7 +244,7 @@ namespace Ну_рванули
 		}
 		private void confirmedbutt_Click(object sender, EventArgs e)
 		{
-			Form2 arena = new Form2();
+			
 			
 
 			
@@ -259,13 +263,13 @@ namespace Ну_рванули
 			/* передаем данные в Форму2 */
 			Form2 arena = new Form2();
 			/* показатели в текст боксах */
-			string[] text = new string[5];
+			string[] text = new string[6];
 			text[0] = TBHelmarmor.Text;
 			text[1] = TBBodyarmor.Text;
 			text[2] = TBHealth.Text;
-			text[3] = TBWeapDamage.Text;
+			text[3] = TBMSkill.Text;
 			text[4] = TBMDef.Text;
-			//text[5] = TBMSkill.Text
+			text[5] = TBWeapDamage.Text;
 			arena.text = text;
 
 			/* картинки */
@@ -274,21 +278,22 @@ namespace Ну_рванули
 			image[1] = pictureArmour.ImageLocation;
 			image[2] = pictureWeapon.ImageLocation;
 			image[3] = pictureShield.ImageLocation;
-			arena.image = image;
+			arena.image_form2 = image;
 
-			/* числовые показатели для формул */
-			//int[] value = new int[6];
-			//Weapon chosen = (Weapon)chooseWeapon.SelectedItem;
-			//value[0] = Convert.ToInt32(TBHelmarmor.Text); // helm armour
-			//value[1] = Convert.ToInt32(TBBodyarmor.Text); // body armour
-			//value[2] = 100; //	health
-			//value[3] = chosen.min_damage; // min_damage weapon
-			//value[4] = chosen.max_damage; // max_damage weapon
-			//value[5] = Convert.ToInt32(TBMDef.Text); // melle defense
-			////value[6] = Convert.ToInt32(TBMSkill.Text); // melle skill
-			//arena.value = value;
-
-
+            /* числовые показатели для формул */
+            int[] value = new int[7];
+            Weapon chosen = (Weapon)chooseWeapon.SelectedItem;
+            value[0] = Convert.ToInt32(TBHelmarmor.Text); // helm armour
+            value[1] = Convert.ToInt32(TBBodyarmor.Text); // body armour
+            value[2] = 100; //	health 
+            value[3] = Convert.ToInt32(TBMSkill.Text); // melle skill
+            value[4] = Convert.ToInt32(TBMDef.Text); // melle defense
+            value[5] = chosen.min_damage; // min_damage weapon
+            value[6] = chosen.max_damage; // max_damage weapon
+            arena.value = value;
+            string name_v;
+			name_v = name.Text;
+			arena.name_v = name_v;
 			arena.Show();  
 		}
 		private void name_TextChanged(object sender, EventArgs e)

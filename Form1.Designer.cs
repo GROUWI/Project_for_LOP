@@ -42,9 +42,7 @@ namespace Ну_рванули
             this.createchar = new System.Windows.Forms.Button();
             this.arenabutt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.confirmedbutt = new System.Windows.Forms.Button();
             this.pictureBoxWeapDamage = new System.Windows.Forms.PictureBox();
             this.pictureBoxHealth = new System.Windows.Forms.PictureBox();
@@ -222,35 +220,21 @@ namespace Ну_рванули
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 47);
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(22, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.Size = new System.Drawing.Size(161, 27);
             this.label1.TabIndex = 22;
             this.label1.Text = "Имя персонажа:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Прозвище:";
-            // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(120, 44);
+            this.name.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(189, 54);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(167, 20);
+            this.name.Size = new System.Drawing.Size(167, 27);
             this.name.TabIndex = 24;
             this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(120, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 25;
             // 
             // confirmedbutt
             // 
@@ -376,9 +360,7 @@ namespace Ну_рванули
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(440, 633);
             this.Controls.Add(this.confirmedbutt);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.name);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.arenabutt);
             this.Controls.Add(this.createchar);
@@ -445,9 +427,7 @@ namespace Ну_рванули
         private System.Windows.Forms.Button createchar;
         private System.Windows.Forms.Button arenabutt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox name;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button confirmedbutt;
     }
 }

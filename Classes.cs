@@ -32,11 +32,7 @@ namespace Ну_рванули
         public double HHitChance { get; set; }
         public Weapon(string name, int min, int max, double coef, double headChance) { Name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance; } 
     }
-    class OneWeapon : Weapon
-    {
-        public OneWeapon(string name, int min, int max, double coef, double headChance) : base(name, min, max, coef, headChance)
-        { Name = name; min_damage = min; max_damage = max; armor_coef = coef; HHitChance = headChance; }
-    }
+    
     class TwoWeapon : Weapon
     { 
         /* наследование конструктора из Weapon */
