@@ -39,9 +39,9 @@ namespace Ну_рванули
             //Damage как чистый урон оружия без коэфов
             int Damage = Convert.ToInt32(min_damage + rndArray[0] * (max_damage - min_damage));
             // Подсчет места попадания во врага (1 - попал, 0 - промазал)
-            bool BodyHit = true;
-            bool HeadHit = true;
-            if (Hitchance < rndArray[0] * 100)
+            bool BodyHit = false;
+            bool HeadHit = false;
+            if (Hitchance > rndArray[0] * 100)
             {
                 BodyHit = true;
                 if ((rndArray[1] * 100) < 25)
@@ -53,6 +53,7 @@ namespace Ну_рванули
                     HeadHit = false;
             }
             else
+                BodyHit = false;
                 BodyHit = false;
             // Формула фактического попадания по врагу с random и уроном по броне и хп
             /* для шлема */
@@ -129,8 +130,8 @@ namespace Ну_рванули
             //Damage как чистый урон оружия без коэфов
             int Damage = Convert.ToInt32(min_damageEnemy + rndArray[0] * (max_damageEnemy - min_damageEnemy));
             // Подсчет места попадания в нас (1 - попал, 0 - промазал)
-            bool BodyHit = true;
-            bool HeadHit = true;
+            bool BodyHit = false;
+            bool HeadHit = false;
             if (Hitchance < rndArray[0] * 100)
             {
                 BodyHit = true;
@@ -144,6 +145,7 @@ namespace Ну_рванули
             }
             else
                 BodyHit = false;
+                HeadHit = false;
             // Формула фактического попадания по нам с random и уроном по броне и хп
             /* для шлема */
             if (helm_armor >= Convert.ToInt32(Damage * armor_coefEnemy))
@@ -301,13 +303,13 @@ namespace Ну_рванули
             pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
             pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
             /* задаем параметры противника */
-            valueEnemy[0] = ItemEnemy.Next(30, 250); // helm  armour enemy
-            valueEnemy[1] = ItemEnemy.Next(40, 300); // body armour enemy 
+            valueEnemy[0] = ItemEnemy.Next(30, 300); // helm  armour enemy
+            valueEnemy[1] = ItemEnemy.Next(valueEnemy[0]-20, valueEnemy[0]+50); // body armour enemy 
             valueEnemy[2] = 100;    // health enemy
-            valueEnemy[3] = ItemEnemy.Next(30, 100); // melle skill enemy
-            valueEnemy[4] = ItemEnemy.Next(40, 70); // melle def enemy
-            valueEnemy[5] = ItemEnemy.Next(10, 40);// min damage enemy
-            valueEnemy[6] = ItemEnemy.Next(50, 110);// max damage enemy
+            valueEnemy[3] = ItemEnemy.Next(40, 70); // melee skill enemy
+            valueEnemy[4] = ItemEnemy.Next(10, 50); // melee def enemy
+            valueEnemy[5] = ItemEnemy.Next(10, 60);// min damage enemy
+            valueEnemy[6] = ItemEnemy.Next(valueEnemy[5]+10, valueEnemy[5]+25);// max damage enemy
             /* выводим их на экран */
             TBHelmarmorEnemy.Text = valueEnemy[0].ToString();
             TBBodyarmorEnemy.Text = valueEnemy[1].ToString();

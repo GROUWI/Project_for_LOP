@@ -70,6 +70,7 @@ namespace Ну_рванули
             this.pictureHelmetenemy = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnNextTurn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapDamage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallArmour)).BeginInit();
@@ -210,7 +211,7 @@ namespace Ну_рванули
             // fightbutt
             // 
             this.fightbutt.Font = new System.Drawing.Font("Segoe Script", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fightbutt.Location = new System.Drawing.Point(335, 380);
+            this.fightbutt.Location = new System.Drawing.Point(336, 380);
             this.fightbutt.Name = "fightbutt";
             this.fightbutt.Size = new System.Drawing.Size(194, 54);
             this.fightbutt.TabIndex = 123;
@@ -545,12 +546,22 @@ namespace Ну_рванули
             // 
             this.timer1.Interval = 2000;
             // 
+            // btnNextTurn
+            // 
+            this.btnNextTurn.Location = new System.Drawing.Point(352, 440);
+            this.btnNextTurn.Name = "btnNextTurn";
+            this.btnNextTurn.Size = new System.Drawing.Size(157, 39);
+            this.btnNextTurn.TabIndex = 202;
+            this.btnNextTurn.Text = "Следующий ход";
+            this.btnNextTurn.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(860, 522);
+            this.Controls.Add(this.btnNextTurn);
             this.Controls.Add(this.TBWeapDamage);
             this.Controls.Add(this.pictureBoxWeapDamage);
             this.Controls.Add(this.pictureBoxHealth);
@@ -658,5 +669,6 @@ namespace Ну_рванули
         private System.Windows.Forms.PictureBox pictureHelmet;
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnNextTurn;
     }
 }
