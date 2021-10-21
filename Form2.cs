@@ -39,8 +39,8 @@ namespace Ну_рванули
             //Damage как чистый урон оружия без коэфов
             int Damage = Convert.ToInt32(min_damage + rndArray[0] * (max_damage - min_damage));
             // Подсчет места попадания во врага (1 - попал, 0 - промазал)
-            bool BodyHit = false;
-            bool HeadHit = false;
+            bool BodyHit;
+            bool HeadHit;
             if (Hitchance > rndArray[0] * 100)
             {
                 BodyHit = true;
@@ -130,8 +130,8 @@ namespace Ну_рванули
             //Damage как чистый урон оружия без коэфов
             int Damage = Convert.ToInt32(min_damageEnemy + rndArray[0] * (max_damageEnemy - min_damageEnemy));
             // Подсчет места попадания в нас (1 - попал, 0 - промазал)
-            bool BodyHit = false;
-            bool HeadHit = false;
+            bool BodyHit;
+            bool HeadHit;
             if (Hitchance < rndArray[0] * 100)
             {
                 BodyHit = true;
@@ -225,7 +225,7 @@ namespace Ну_рванули
                 if (hpEnemy <= 0)
                 {
                     TBHealthEnemy.Text = "0/100";
-                    MessageBox.Show("вы выиграли");
+                    MessageBox.Show("Вы выиграли!");
                     break;
                 }
                 
@@ -240,7 +240,7 @@ namespace Ну_рванули
                 if (hp <= 0)
                 {
                     TBHealth.Text = "0/100";
-                    MessageBox.Show("вы проиграли");
+                    MessageBox.Show("Вы проиграли!");
                     break;
                 }
             }
