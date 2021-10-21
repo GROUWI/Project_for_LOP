@@ -71,6 +71,7 @@ namespace Ну_рванули
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnNextTurn = new System.Windows.Forms.Button();
+            this.log = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWeapDamage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHealth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSmallArmour)).BeginInit();
@@ -307,7 +308,6 @@ namespace Ну_рванули
             this.name.TabIndex = 90;
             this.name.Text = "Имя";
             this.name.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.name.Click += new System.EventHandler(this.name_Click);
             // 
             // pictureBoxWeapDamage
             // 
@@ -548,12 +548,23 @@ namespace Ну_рванули
             // 
             // btnNextTurn
             // 
-            this.btnNextTurn.Location = new System.Drawing.Point(352, 440);
+            this.btnNextTurn.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnNextTurn.Location = new System.Drawing.Point(336, 440);
             this.btnNextTurn.Name = "btnNextTurn";
-            this.btnNextTurn.Size = new System.Drawing.Size(157, 39);
+            this.btnNextTurn.Size = new System.Drawing.Size(194, 39);
             this.btnNextTurn.TabIndex = 202;
             this.btnNextTurn.Text = "Следующий ход";
             this.btnNextTurn.UseVisualStyleBackColor = true;
+            this.btnNextTurn.Click += new System.EventHandler(this.btnNextTurn_Click);
+            // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(352, 83);
+            this.log.Multiline = true;
+            this.log.Name = "log";
+            this.log.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.log.Size = new System.Drawing.Size(121, 20);
+            this.log.TabIndex = 204;
             // 
             // Form2
             // 
@@ -561,6 +572,7 @@ namespace Ну_рванули
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
             this.ClientSize = new System.Drawing.Size(860, 522);
+            this.Controls.Add(this.log);
             this.Controls.Add(this.btnNextTurn);
             this.Controls.Add(this.TBWeapDamage);
             this.Controls.Add(this.pictureBoxWeapDamage);
@@ -670,5 +682,6 @@ namespace Ну_рванули
         private System.Windows.Forms.Label name;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnNextTurn;
+        private System.Windows.Forms.TextBox log;
     }
 }

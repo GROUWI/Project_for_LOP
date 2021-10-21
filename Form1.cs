@@ -186,7 +186,10 @@ namespace Ну_рванули
 
 
 			name.Text = name_v;
-			confirmedbutt.Enabled = false;
+			if (name.Text == "")
+				confirmedbutt.Enabled = false;
+			else
+				confirmedbutt.Enabled = true;
 			createchar.Enabled = false;
 			arenabutt.Enabled = false;
 
@@ -243,12 +246,7 @@ namespace Ну_рванули
 			pictureShield.Image = Image.FromFile(chosen.getItemImage());
 		}
 		private void confirmedbutt_Click(object sender, EventArgs e)
-		{
-			
-			
-
-			
-
+		{ 
 			chooseHelmet.Enabled = false;
 			chooseArmour.Enabled = false;
 			chooseWeapon.Enabled = false;

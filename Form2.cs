@@ -14,8 +14,8 @@ namespace Ну_рванули
 {
     public partial class Form2 : Form
     {
-        int[] MyTurn( int m_skill, int min_damage, int max_damage, double armor_coef,
-            int helm_armorEnemy, int body_armorEnemy, int hpEnemy, int m_defEnemy,  int ArmorBorder)
+        int[] MyTurn(int m_skill, int min_damage, int max_damage, double armor_coef,
+            int helm_armorEnemy, int body_armorEnemy, int hpEnemy, int m_defEnemy, int ArmorBorder)
         {
             int Hitchance;
             /* НАШ ХОД */
@@ -53,8 +53,12 @@ namespace Ну_рванули
                     HeadHit = false;
             }
             else
+            {
+                HeadHit = false;
                 BodyHit = false;
-                BodyHit = false;
+            }
+            
+                
             // Формула фактического попадания по врагу с random и уроном по броне и хп
             /* для шлема */
             if (helm_armorEnemy >= Convert.ToInt32(Damage * armor_coef))
@@ -67,7 +71,10 @@ namespace Ну_рванули
                 {
                     /* если броня шлема врага меньше чем граничное значение
                     * то идет урон по ХП по данной формуле*/
-                    hpEnemy = Convert.ToInt32(hpEnemy - 1.5 * Damage * (1 - (helm_armorEnemy / ArmorBorder)));
+                    double Totaldamage = 1.5 * Damage * (1 - (helm_armorEnemy / ArmorBorder));
+                    hpEnemy = Convert.ToInt32(hpEnemy - Totaldamage);
+                    
+                    
                 }
 
             }
@@ -76,7 +83,7 @@ namespace Ну_рванули
                 /* если броня шлема врага меньше чем урон оружия * коэф по броне
                  * то броня игнорируется*/
                 helm_armorEnemy = 0;
-                hpEnemy = Convert.ToInt32(hpEnemy - Damage * (1 - (helm_armorEnemy / ArmorBorder)));
+                hpEnemy = Convert.ToInt32(hpEnemy - Damage);    
             }
 
             /* для доспеха аналогично, как и для шлема */
@@ -102,7 +109,7 @@ namespace Ну_рванули
             returnesfuncEnemy[1] = body_armorEnemy;
             returnesfuncEnemy[2] = hpEnemy;
             return returnesfuncEnemy;
-            
+
         }
         int[] EnemyTurn(int helm_armor, int body_armor, int hp, int m_def, int m_skillEnemy,
             int min_damageEnemy, int max_damageEnemy, double armor_coefEnemy, int ArmorBorder)
@@ -144,8 +151,11 @@ namespace Ну_рванули
                     HeadHit = false;
             }
             else
+            {
                 BodyHit = false;
                 HeadHit = false;
+            }
+                
             // Формула фактического попадания по нам с random и уроном по броне и хп
             /* для шлема */
             if (helm_armor >= Convert.ToInt32(Damage * armor_coefEnemy))
@@ -159,7 +169,7 @@ namespace Ну_рванули
                     /* если броня шлема наша меньше чем граничное значение
                     * то идет урон по ХП по данной формуле*/
                     hp = Convert.ToInt32(hp - 1.5 * Damage * (1 - (helm_armor / ArmorBorder)));
-                    
+
                 }
 
             }
@@ -186,66 +196,13 @@ namespace Ну_рванули
                 body_armor = 0;
                 hp = Convert.ToInt32(hp - Damage * (1 - (body_armor / ArmorBorder)));
             }
-            TBHealth.Text = hp.ToString() + "/100";
             Thread.Sleep(1000);
-            int[] returnesfunc = new int[3]; 
+            int[] returnesfunc = new int[3];
             returnesfunc[0] = helm_armor;
             returnesfunc[1] = body_armor;
             returnesfunc[2] = hp;
             return returnesfunc;
         }
-
-    
-
-    // Минимальный процент попадания = 5;
-    // Максимальный процент попадания = 95;
-    public void Fight()
-        {
-            int[] storage = new int[3];
-            storage[0] = value[0];
-            storage[1] = value[1];
-            storage[2] = value[2];
-            int[] storageEnemy = new int[3];
-            storageEnemy[0] = valueEnemy[0];
-            storageEnemy[1] = valueEnemy[1];
-            storageEnemy[2] = valueEnemy[2];
-            int[] returnes = new int[3];
-            int[] returnesEnemy = new int[3];
-            int hp = storage[2];
-            int hpEnemy = storageEnemy[2];
-            /* деремся пока живы */
-            while (hp >= 0 || hpEnemy >= 0)
-            {
-                returnesEnemy = MyTurn(value[3], value[5], value[6], armor_coef,
-            storageEnemy[0], storageEnemy[1], hpEnemy, valueEnemy[4], 75);
-                storageEnemy[0] = returnesEnemy[0];
-                storageEnemy[1] = returnesEnemy[1];
-                hpEnemy = returnesEnemy[2];
-                
-                if (hpEnemy <= 0)
-                {
-                    TBHealthEnemy.Text = "0/100";
-                    MessageBox.Show("Вы выиграли!");
-                    break;
-                }
-                
-                    
-                
-                returnes = EnemyTurn(storage[0], storage[1], hp, value[4], valueEnemy[3],
-             valueEnemy[5], valueEnemy[6], armor_coefEnemy, 75);
-                storage[0] = returnes[0];
-                storage[1] = returnes[1];
-                hp = returnes[2];
-                
-                if (hp <= 0)
-                {
-                    TBHealth.Text = "0/100";
-                    MessageBox.Show("Вы проиграли!");
-                    break;
-                }
-            }
-        }
-
         public string ImageItemEnemy(int N, string directoryPath)
         {
 
@@ -261,6 +218,8 @@ namespace Ну_рванули
             return ways[randomImage.Next(1, N)];
 
         }
+
+
         /* переменные для обмена данными между Form1 и Form2 */
         Random ItemEnemy = new Random();
         public string[] text = new string[6];
@@ -270,6 +229,21 @@ namespace Ну_рванули
         public string name_v;
         public double armor_coef;
         public double armor_coefEnemy;
+
+        /* массивы для битвы и очередности ходов */
+        public int[] returnesEnemy = new int[3];
+        public int[] returnes = new int[3];
+        /* начальные значения брони */
+        public string beginHelmarmor;
+        public string beginBodyarmor;
+        public string beginHelmarmorEnemy;
+        public string beginBodyarmorEnemy;
+
+        public bool flag = true;
+        public bool myturn = true;
+
+        int[] fight = new int[7];
+        int[] fightEnemy = new int[7];
         public Form2()
         {
             InitializeComponent();
@@ -287,16 +261,26 @@ namespace Ну_рванули
             /* переносим фото */
             arena.Enabled = false;
             name.Text = name_v;
+            fightbutt.Enabled = false;
+            btnNextTurn.Enabled = false;
             // не работает
             pictureHelmet.Image = Image.FromFile(image_form2[0]);
             pictureArmour.Image = Image.FromFile(image_form2[1]);
             pictureWeapon.Image = Image.FromFile(image_form2[2]);
             pictureShield.Image = Image.FromFile(image_form2[3]);
 
-
+            
         }
         private void choose_Click_1(object sender, EventArgs e)
         {
+            
+            fightbutt.Enabled = true;
+            TBHelmarmor.Text = text[0];
+            TBBodyarmor.Text = text[1];
+            TBHealth.Text = text[2];
+            TBMSkill.Text = text[3];
+            TBMDef.Text = text[4];
+            TBWeapDamage.Text = text[5];
             /* рандомайзер для картинок амуниции */
             pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
             pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
@@ -326,15 +310,86 @@ namespace Ну_рванули
             createchar.name_v = name_v;
             createchar.Show();
         }
-
-        private void name_Click(object sender, EventArgs e)
-        {
-
-        }
         private void fightbutt_Click_1(object sender, EventArgs e)
         {
-            Fight();
-            TBHealth.Text = "100/100";
+            btnNextTurn.Enabled = true;
+            fightbutt.Enabled = false;
+            choose.Enabled = false;
+            fight[0] = value[0];
+            fight[1] = value[1];
+            fight[2] = value[2];
+            fight[3] = value[3];
+            fight[4] = value[4];
+            fight[5] = value[5];
+            fight[6] = value[6];
+            fightEnemy[0] = valueEnemy[0];
+            fightEnemy[1] = valueEnemy[1];
+            fightEnemy[2] = valueEnemy[2];
+            fightEnemy[3] = valueEnemy[3];
+            fightEnemy[4] = valueEnemy[4];
+            fightEnemy[5] = valueEnemy[5];
+            fightEnemy[6] = valueEnemy[6];
+            beginHelmarmor = TBHelmarmor.Text;
+            beginBodyarmor = TBBodyarmor.Text;
+
+            beginHelmarmorEnemy = TBHelmarmorEnemy.Text;
+            beginBodyarmorEnemy = TBBodyarmorEnemy.Text;
+
+            TBHelmarmor.Text = beginHelmarmor + "/" + beginHelmarmor;
+            TBBodyarmor.Text = beginBodyarmor + "/" + beginBodyarmor;
+            TBHealth.Text = value[2].ToString() + "/100";
+
+            TBHelmarmorEnemy.Text = beginHelmarmorEnemy + "/" + beginHelmarmorEnemy;
+            TBBodyarmorEnemy.Text = beginBodyarmorEnemy + "/" + beginBodyarmorEnemy;
+            TBHealthEnemy.Text = valueEnemy[2].ToString() + "/100";
+
+
+        }
+
+        private void btnNextTurn_Click(object sender, EventArgs e)
+        {
+          
+            if (myturn == true & fightEnemy[2] > 0) // хп врага
+            {
+                
+                returnesEnemy = MyTurn(fight[3], fight[5], fight[6], armor_coef,
+                fightEnemy[0], fightEnemy[1], fightEnemy[2], fightEnemy[4], 75);
+                fightEnemy[0] = returnesEnemy[0];
+                fightEnemy[1] = returnesEnemy[1];
+                fightEnemy[2] = returnesEnemy[2];
+                log.Text = "урон по врагу - " + (100 - fightEnemy[2]).ToString();
+                TBHelmarmorEnemy.Text = fightEnemy[0].ToString() + "/" + beginHelmarmorEnemy;
+                TBBodyarmorEnemy.Text = fightEnemy[1].ToString() + "/" + beginBodyarmorEnemy;
+                TBHealthEnemy.Text = fightEnemy[2].ToString() + "/100";
+            }
+            if (fightEnemy[2] <= 0)
+            {
+                TBHealthEnemy.Text = "0/100";
+                MessageBox.Show("Вы выиграли!");
+                btnNextTurn.Enabled = false;
+                choose.Enabled = true;
+            }
+            if (myturn == false & fight[2] > 0) // хп наше
+            {
+                
+                returnes = EnemyTurn(fight[0], fight[1], fight[2], fight[4], fightEnemy[3],
+                fightEnemy[5], fightEnemy[6], armor_coefEnemy, 75);
+                fight[0] = returnes[0];
+                fight[1] = returnes[1];
+                fight[2] = returnes[2];
+                log.Text = "урон по нам - " + (100 - fight[2]).ToString();
+                TBHelmarmor.Text = fight[0].ToString() + "/" + beginHelmarmor;
+                TBBodyarmor.Text = fight[1].ToString() + "/" + beginBodyarmor;
+                TBHealth.Text = fight[2].ToString() + "/100";
+            }
+            if (fight[2] <= 0)
+            {
+                TBHealth.Text = "0/100";
+                MessageBox.Show("Вы проиграли!");
+                btnNextTurn.Enabled = false;
+                choose.Enabled = true;
+            }
+            myturn = !myturn;
         }
     }
 }
