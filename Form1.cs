@@ -38,7 +38,7 @@ namespace Ну_рванули
 				new Helmet ("Full Helm", 300),
 			};	
 			/* задание картинок шлемам через цикл */
-			string directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Helmets";
+			string directoryPath = @"C:\Users\1337\source\repos\Project_for_LOP\Helmets";
 			/*существует ли директория?*/
 			bool existsDir = Directory.Exists(directoryPath); 
 			if (existsDir)
@@ -82,7 +82,7 @@ namespace Ну_рванули
 				new Armour ("Coat of Plates", 320),
 			};
 			
-			directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Armour";
+			directoryPath = @"C:\Users\1337\source\repos\Project_for_LOP\Armour";
 			existsDir = Directory.Exists(directoryPath);
 			if (existsDir)
 			{   
@@ -126,7 +126,7 @@ namespace Ну_рванули
 				new TwoWeapon ("Pike", 60, 80, 1, 0.05),
 				new TwoWeapon ("Billhook", 55, 85, 1.4, 0.05),
 			};
-			directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Weapons";
+			directoryPath = @"C:\Users\1337\source\repos\Project_for_LOP\Weapons";
 			existsDir = Directory.Exists(directoryPath);
 			if (existsDir)
 			{
@@ -153,8 +153,8 @@ namespace Ну_рванули
 				new Shield ("WoodenShield", 50),
 			};
 
-				directoryPath = @"C:\Users\User\source\repos\Project_for_LOP\Shields";
-				existsDir = Directory.Exists(directoryPath);
+				directoryPath = @"C:\Users\1337\source\repos\Project_for_LOP\Shields";
+				 existsDir = Directory.Exists(directoryPath);
 				if (existsDir)
 				{
 					var pngs = Directory.EnumerateFiles(directoryPath, "*.png");

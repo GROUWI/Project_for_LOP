@@ -61,13 +61,13 @@ namespace Ну_рванули
                 
             // Формула фактического попадания по врагу с random и уроном по броне и хп
             /* для шлема */
-            if (helm_armorEnemy >= Convert.ToInt32(Damage * armor_coef))
+            if (helm_armorEnemy >= Convert.ToInt32(Damage * armor_coef) & (HeadHit == true))
             {
                 /* если броня шлема врага больше чем урон оружия * коэф по броне
                  * то идет урон по броне шлема по данной формуле*/
                 helm_armorEnemy = Convert.ToInt32(helm_armorEnemy - Damage * armor_coef);
 
-                if ((helm_armorEnemy <= ArmorBorder) & (HeadHit == true))
+                if ((helm_armorEnemy < ArmorBorder) & (HeadHit == true))
                 {
                     /* если броня шлема врага меньше чем граничное значение
                     * то идет урон по ХП по данной формуле*/
@@ -78,7 +78,7 @@ namespace Ну_рванули
                 }
 
             }
-            else
+            if (body_armorEnemy < Convert.ToInt32(Damage * armor_coef) & (BodyHit == true))
             {
                 /* если броня шлема врага меньше чем урон оружия * коэф по броне
                  * то броня игнорируется*/
@@ -87,7 +87,7 @@ namespace Ну_рванули
             }
 
             /* для доспеха аналогично, как и для шлема */
-            if (body_armorEnemy >= Damage * armor_coef)
+            if ((body_armorEnemy >= Damage * armor_coef) & (BodyHit == true))
             {
                 body_armorEnemy = Convert.ToInt32(body_armorEnemy - Damage * armor_coef);
 
@@ -96,7 +96,7 @@ namespace Ну_рванули
                     hpEnemy = Convert.ToInt32(hpEnemy - Damage * (1 - (body_armorEnemy / ArmorBorder)));
                 }
             }
-            else
+            if (body_armorEnemy < Convert.ToInt32(Damage * armor_coef) & (BodyHit == true))
             {
                 body_armorEnemy = 0;
                 hpEnemy = Convert.ToInt32(hpEnemy - Damage * (1 - (body_armorEnemy / ArmorBorder)));
@@ -158,7 +158,7 @@ namespace Ну_рванули
                 
             // Формула фактического попадания по нам с random и уроном по броне и хп
             /* для шлема */
-            if (helm_armor >= Convert.ToInt32(Damage * armor_coefEnemy))
+            if (helm_armor >= Convert.ToInt32(Damage * armor_coefEnemy) & (HeadHit == true))
             {
                 /* если броня шлема наща больше чем урон оружия * коэф по броне
                  * то идет урон по броне шлема по данной формуле*/
@@ -173,7 +173,7 @@ namespace Ну_рванули
                 }
 
             }
-            else
+            if (helm_armor < Convert.ToInt32(Damage * armor_coefEnemy) & (HeadHit == true))
             {
                 /* если броня шлема наша меньше чем урон оружия * коэф по броне
                  * то броня игнорируется*/
@@ -182,7 +182,7 @@ namespace Ну_рванули
             }
 
             /* для доспеха аналогично, как и для шлема */
-            if (body_armor >= Damage * armor_coefEnemy)
+            if ((body_armor >= Damage * armor_coefEnemy) & (BodyHit == true))
             {
                 body_armor = Convert.ToInt32(body_armor - Damage * armor_coefEnemy);
 
@@ -191,7 +191,7 @@ namespace Ну_рванули
                     hp = Convert.ToInt32(hp - Damage * (1 - (body_armor / ArmorBorder)));
                 }
             }
-            else
+            if ((body_armor < Damage * armor_coefEnemy) & (BodyHit == true))
             {
                 body_armor = 0;
                 hp = Convert.ToInt32(hp - Damage * (1 - (body_armor / ArmorBorder)));
@@ -282,10 +282,10 @@ namespace Ну_рванули
             TBMDef.Text = text[4];
             TBWeapDamage.Text = text[5];
             /* рандомайзер для картинок амуниции */
-            pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"E:\Для VS\Ну рванули 1.3\Helmets"));
-            pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"E:\Для VS\Ну рванули 1.3\Armour"));
-            pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"E:\Для VS\Ну рванули 1.3\Shields"));
-            pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"E:\Для VS\Ну рванули 1.3\Weapons\OneHanded"));
+            pictureHelmetenemy.Image = Image.FromFile(ImageItemEnemy(16, @"C:\Users\1337\source\repos\Project_for_LOP\Helmets"));
+            pictureArmourenemy.Image = Image.FromFile(ImageItemEnemy(18, @"C:\Users\1337\source\repos\Project_for_LOP\Armour"));
+            pictureShieldenemy.Image = Image.FromFile(ImageItemEnemy(5, @"C:\Users\1337\source\repos\Project_for_LOP\Shields"));
+            pictureWeaponenemy.Image = Image.FromFile(ImageItemEnemy(13, @"C:\Users\1337\source\repos\Project_for_LOP\Weapons\OneHanded"));
             /* задаем параметры противника */
             valueEnemy[0] = ItemEnemy.Next(30, 300); // helm  armour enemy
             valueEnemy[1] = ItemEnemy.Next(valueEnemy[0]-20, valueEnemy[0]+50); // body armour enemy 

@@ -559,11 +559,11 @@ namespace Ну_рванули
             // 
             // log
             // 
-            this.log.Location = new System.Drawing.Point(352, 83);
+            this.log.Location = new System.Drawing.Point(352, 70);
             this.log.Multiline = true;
             this.log.Name = "log";
             this.log.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.log.Size = new System.Drawing.Size(121, 20);
+            this.log.Size = new System.Drawing.Size(157, 47);
             this.log.TabIndex = 204;
             // 
             // Form2
